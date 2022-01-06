@@ -1,0 +1,111 @@
+2021-12-07 14:32:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:32:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:33:19 34230 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:33:19 34230 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:35:09 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:35:09 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:35:16 6725 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:35:16 6725 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:40:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-12-07 14:40:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-12-07 14:40:42 17676 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:40:42 17676 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:54:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:54:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 14:54:34 4477 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:54:34 4477 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 14:54:54 24889 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 14:54:54 24889 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-12-07 14:54:54 24889 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 14:54:54 24891 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-12-07 14:54:54 24891 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-12-07 14:54:54 24891 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-12-07 14:54:56 26719 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-12-07 14:54:56 26844 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-12-07 14:54:56 26844 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 14:54:56 26844 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-12-07 14:54:54|Gases|XJO61E|09037-49006_180416000011_9718060|1||19589220
+2021-12-07 14:54:56 26844 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 14:57:03 153774 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 14:57:03 153774 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 15:02:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 15:02:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 15:03:12 41542 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 15:03:12 41542 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 15:03:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 15:03:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 15:24:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 15:24:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:14:41 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:14:41 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:15:11 30280 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 16:15:11 30280 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 16:16:53 131948 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 16:16:53 131948 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-12-07 16:16:53 131948 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 16:16:53 131950 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-12-07 16:16:53 131950 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-12-07 16:16:53 131950 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-12-07 16:16:53 132099 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-12-07 16:16:53 132153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-12-07 16:16:53 132153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 16:16:53 132153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-12-07 16:16:53|Gases|XJO61E|09037-49006_180416000011_9718060|1||19589220
+2021-12-07 16:16:53 132154 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 16:20:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:20:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:20:38 22997 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 16:20:38 22997 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 16:20:45 29978 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 16:20:45 29978 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-12-07 16:20:45 29978 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 16:20:45 29980 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-12-07 16:20:45 29980 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-12-07 16:20:45 29980 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-12-07 16:20:45 30137 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-12-07 16:20:45 30192 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-12-07 16:20:45 30192 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 16:20:45 30192 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-12-07 16:20:45|Gases|XJO61E|09037-49006_180416000011_9718060|1||19589220
+2021-12-07 16:20:45 30192 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 16:33:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:33:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 16:33:42 4949 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 16:33:42 4949 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:15:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:15:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:15:57 9661 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:15:57 9661 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:16:19 31893 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 17:16:19 31893 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-12-07 17:16:19 31893 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 17:16:19 31896 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-12-07 17:16:19 31896 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-12-07 17:16:19 31896 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-12-07 17:16:19 31995 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-12-07 17:16:20 32121 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-12-07 17:16:20 32121 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 17:16:20 32121 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-12-07 17:16:19|Gases|XJO61E|09037-49006_180416000011_9718060|1||19589220
+2021-12-07 17:16:20 32121 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 17:17:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:17:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:18:07 12475 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:18:07 12475 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:18:25 30421 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 17:18:25 30421 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-12-07 17:18:25 30422 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-12-07 17:18:25 30424 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-12-07 17:18:25 30424 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-12-07 17:18:25 30425 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-12-07 17:18:25 30513 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-12-07 17:18:25 30638 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-12-07 17:18:25 30638 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 17:18:25 30638 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-12-07 17:18:25|Gases|XJO61E|09037-49006_180416000011_9718060|1||19589220
+2021-12-07 17:18:25 30638 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-12-07 17:19:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:19:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:19:33 10118 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:19:33 10118 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-12-07 17:21:22 119519 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 17:21:22 119519 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 17:24:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:24:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-07 17:24:59 52121 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-12-07 17:24:59 52121 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

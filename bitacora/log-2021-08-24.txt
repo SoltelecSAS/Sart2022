@@ -1,0 +1,4 @@
+2021-08-24 11:03:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-08-24 11:03:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-08-24 11:03:31 6608 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-08-24 11:03:31 6608 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

@@ -1,0 +1,38 @@
+2021-09-15 12:46:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 12:46:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 12:49:45 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 12:49:45 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 12:51:37 112667 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-15 12:51:37 112667 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-15 12:57:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 12:57:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 13:03:02 318758 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 13:03:02 318758 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 14:29:45 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 14:29:45 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 14:33:40 235564 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 14:33:40 235564 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 14:50:34 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 14:50:34 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 15:08:53 1099355 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 15:08:53 1099355 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 15:41:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 15:41:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 15:41:44 19843 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 15:41:44 19843 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-15 16:29:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 16:29:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-15 16:30:06 31098 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-15 16:30:06 31098 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-15 08:46:59 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 08:46:59 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 08:47:38 38595 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:47:38 38595 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:50:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 08:50:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-15 08:50:07 4391 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:50:07 4391 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:53:47 224897 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:53:47 224897 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-15 08:54:58 295659 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-15 08:54:58 295659 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

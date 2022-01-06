@@ -1,0 +1,30 @@
+2021-11-23 11:36:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:36:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:38:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:38:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:39:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:39:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:42:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:42:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:47:57 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:47:57 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:51:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:51:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:52:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 11:52:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:08:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:08:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:09:18 34495 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:09:18 34495 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:10:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:10:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:10:24 6263 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:10:24 6263 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:12:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:12:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-23 12:13:05 9424 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:13:05 9424 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Fotopara vehiculo de placas: CQC652
+2021-11-23 12:15:05 129381 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-23 12:15:05 129381 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-23 12:22:50 752414 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-23 12:22:50 752414 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

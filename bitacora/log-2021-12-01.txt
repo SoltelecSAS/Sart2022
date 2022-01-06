@@ -1,0 +1,2 @@
+2021-12-01 14:52:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-12-01 14:52:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u

@@ -1,0 +1,129 @@
+2021-11-08 08:46:27 15   [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 08:46:27 15   [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 08:46:34 7024 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 08:46:34 7024 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 08:46:42 15773 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u| cierra el programa
+2021-11-08 08:46:42 15773 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u| cierra el programa
+2021-11-08 08:47:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 08:47:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 08:47:20 5357 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 08:47:20 5357 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:00:51 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:00:51 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:01:07 15284 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:01:07 15284 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:08:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:08:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:08:11 8868 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:08:11 8868 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:16:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:16:13 7577 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:13 7577 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:18 12619 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:18 12619 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:27 20850 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:27 20850 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:46 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:16:46 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:16:50 3965 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:16:50 3965 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 09:37:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:37:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 09:42:39 310608 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 09:42:39 310608 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 09:43:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 09:43:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 09:43:42 12699 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 09:43:42 12699 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 09:44:19 50062 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 09:44:19 50062 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 10:33:56 3026850 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 10:33:56 3026850 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 14:12:09 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:12:09 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:12:54 45363 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:12:54 45363 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:17:46 337123 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 14:17:46 337123 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 14:19:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:19:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:19:25 21211 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:19:25 21211 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:20:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:20:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:20:49 6432 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:20:49 6432 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:24:00 197905 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 14:24:00 197905 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 14:24:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:24:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:24:25 7001 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:24:25 7001 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:29:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 14:29:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 14:29:21 4157 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:29:21 4157 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:46:50 5    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:46:50 5    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 14:47:02 11914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:47:02 11914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:51:11 260954 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 14:51:11 260954 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 14:51:15 1318131 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 14:51:15 1318131 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 14:59:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 14:59:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 14:59:40 13159 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 14:59:40 13159 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 15:04:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 15:04:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 15:04:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:04:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:04:52 14069 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 15:04:52 14069 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 15:06:14 95864 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 15:06:14 95864 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-11-08 15:07:05 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:07:05 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:07:09 4260 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 15:07:09 4260 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: DDQ37A
+2021-11-08 15:30:46 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:30:46 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:35:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 15:35:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:40:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:40:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:41:14 54889 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:41:14 54889 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:45:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:45:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:45:33 9463 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - ---------------------------------------------------
+2021-11-08 16:45:33 9463 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - --           cargarMedidasLabradoDB              --
+2021-11-08 16:45:33 9463 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - ---------------------------------------------------
+2021-11-08 16:45:50 26818 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - ---------------------------------------------------
+2021-11-08 16:45:50 26818 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - --           cargarMedidasLabradoDB              --
+2021-11-08 16:45:50 26818 [AWT-EventQueue-0] INFO  com.soltelec.igrafica.Frm_mo_SFrenosv2  - ---------------------------------------------------
+2021-11-08 16:45:50 26818 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: ACA93E
+2021-11-08 16:45:50 26818 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: ACA93E
+2021-11-08 16:46:35 72003 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:46:35 72003 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:47:53 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:47:53 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:48:29 35118 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CQC652
+2021-11-08 16:48:29 35118 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CQC652
+2021-11-08 16:50:13 139198 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:50:13 139198 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-11-08 16:50:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:50:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-08 16:50:55 31660 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CQC652
+2021-11-08 16:50:55 31660 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CQC652
+2021-11-08 17:10:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 17:10:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 17:10:36 9128 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 17:10:36 9128 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-08 17:17:52 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 17:17:52 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 17:18:58 66074 [AWT-EventQueue-0] ERROR root  - java.sql.SQLException: No Existe Equipo con Serial: null
+2021-11-08 17:19:16 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-08 17:19:16 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u

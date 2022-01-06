@@ -1,0 +1,20 @@
+2021-11-16 10:36:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-16 10:36:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-16 10:36:42 4892 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:36:42 4892 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:37:40 63460 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:37:40 63460 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:51:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-16 10:51:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-16 10:51:56 13987 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:51:56 13987 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:52:16 33704 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 10:52:16 33704 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 16:53:13 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-16 16:53:13 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-11-16 16:53:25 12111 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 16:53:25 12111 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 17:26:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-16 17:26:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-16 17:26:47 4508 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652
+2021-11-16 17:26:47 4508 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CQC652

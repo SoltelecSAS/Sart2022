@@ -1,0 +1,95 @@
+2021-10-07 11:37:53 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 11:37:53 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 11:38:11 18128 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 11:38:11 18128 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 12:13:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 12:13:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 12:13:09 7143 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 12:13:09 7143 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 12:53:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 12:53:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 12:53:17 5141 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 12:53:17 5141 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 13:04:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 13:04:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 13:05:54 71081 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 13:05:54 71081 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:37:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:37:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:37:44 12985 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:37:44 12985 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:45:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:45:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:46:29 53556 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:46:29 53556 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:46:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:46:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 14:47:15 16736 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 14:47:15 16736 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 15:17:50 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:17:50 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:18:23 32971 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-10-07 15:18:23 32971 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-10-07 15:18:23 32972 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-10-07 15:18:23 32974 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-10-07 15:18:23 32974 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-10-07 15:18:23 32974 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-10-07 15:18:23 33145 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-10-07 15:18:23 33202 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-10-07 15:18:23 33202 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-10-07 15:18:23 33202 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-10-07 15:18:23|Visual|DYR812|PROFUNDIMETRO PES-0210;00830|1||4839299
+2021-10-07 15:18:23 33202 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-10-07 15:27:37 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:27:37 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:28:03 25914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:28:03 25914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:35:01 443816 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 15:35:01 443816 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 15:35:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:35:19 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 15:37:33 133620 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:37:33 133620 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:37:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:37:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:38:11 30515 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:38:11 30515 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:39:21 101015 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:39:21 101015 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:45:03 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:45:03 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:45:27 23363 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:45:27 23363 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:45:45 41113 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:45:45 41113 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:46:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:46:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:46:51 30537 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:46:51 30537 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:50:01 219948 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 15:50:01 219948 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 15:50:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:50:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 15:51:05 34689 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:51:05 34689 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 15:52:17 107043 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 15:52:17 107043 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 16:22:56 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 16:22:56 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 16:23:04 7625 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 16:23:04 7625 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 17:07:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 17:07:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-07 17:07:19 6944 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 17:07:19 6944 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-07 17:08:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:08:12 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:08:31 19339 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 17:08:31 19339 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CBW087
+2021-10-07 17:09:21 69749 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 17:09:21 69749 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 17:11:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:11:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:19:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:19:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-07 17:19:23 9607 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-07 17:19:23 9607 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa

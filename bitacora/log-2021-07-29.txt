@@ -1,0 +1,32 @@
+2021-07-29 12:40:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-07-29 12:40:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-07-29 12:41:05 10509 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 12:41:05 10509 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:07:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:07:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:08:08 54287 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:08:08 54287 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:11:48 274220 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-07-29 14:11:48 274220 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-07-29 14:17:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:17:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:17:05 4192 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:17:05 4192 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:21:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:21:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:21:41 3638 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:21:41 3638 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:25:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:25:43 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:26:14 30400 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:26:14 30400 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:34:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:34:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:34:16 4530 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:34:16 4530 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:35:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:35:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-07-29 14:35:33 4942 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:35:33 4942 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: XJO61E
+2021-07-29 14:41:20 352486 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-07-29 14:41:20 352486 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa

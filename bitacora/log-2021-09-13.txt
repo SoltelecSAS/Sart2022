@@ -1,0 +1,42 @@
+2021-09-13 16:20:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 16:20:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 16:20:57 28625 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 16:20:57 28625 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 09:40:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 09:40:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 09:40:36 19589 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 09:40:36 19589 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 09:46:22 364770 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: SFC04E
+2021-09-13 09:46:22 364770 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: SFC04E
+2021-09-13 09:48:29 491825 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-13 09:48:29 491825 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-13 09:58:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 09:58:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 09:58:38 12627 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 09:58:38 12627 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:00:23 117178 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 10:00:23 117178 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 10:07:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:07:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:07:23 22036 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:07:23 22036 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:30:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:30:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:31:28 63402 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:31:28 63402 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:37:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:37:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:37:48 43914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:37:48 43914 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:39:27 143206 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 10:39:27 143206 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-13 10:43:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:43:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-13 10:44:04 7344 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:44:04 7344 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:46:02 125299 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:46:02 125299 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-13 10:48:12 254982 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: SFC04E
+2021-09-13 10:48:12 254982 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: SFC04E
+2021-09-13 10:50:28 390939 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-13 10:50:28 390939 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa

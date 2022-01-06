@@ -1,0 +1,8 @@
+2021-11-26 16:58:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-26 16:58:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-26 17:00:28 145316 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-11-26 17:00:28 145316 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-11-26 17:10:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-26 17:10:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-11-26 17:10:52 23132 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E
+2021-11-26 17:10:52 23132 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: XJO61E

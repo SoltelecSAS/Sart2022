@@ -1,0 +1,79 @@
+paso validando
+[EL Warning]: metadata: 2021-08-26 08:47:07.135--ServerSession(1505966718)--Class [com.soltelec.model.Calibraciones] specifies discriminatorType=INTEGER and uses [Calibraciones] as the discriminatorValue.  That value cannot be converted to an integer.  We will attempt to use this value in String format.
+[EL Info]: 2021-08-26 08:47:07.686--ServerSession(1505966718)--EclipseLink, version: Eclipse Persistence Services - 2.5.0.v20130507-3faac2b
+[EL Info]: connection: 2021-08-26 08:47:08.126--ServerSession(1505966718)--file:/C:/opt/sst/SartRestructurado/Ejecutable/SART.jar_ProyectoCDAPU_url=jdbc:mysql://127.0.0.1:3306/db_cda?zeroDateTimeBehavior=convertToNull_user=root login successful
+Fecha de validacion: 24/09/2022
+Fecha de Hoy: 26/08/2021
+readArtisan
+ INCIE EL ARTISAN PARAMETRO ARTISAN 
+ FINALICE ARTISAN PARAMETRO 
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-------------------------------------------------------------------
+--------------realizando pruebaInspeccionSensorial-----------------
+--------------------------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: PROFUNDIMETRO
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS SN-0572;20180514L Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@57de6911: select e.serialresolucion from equipos e where e.tipo = 'PROFUNDIMETRO' and e.Pista = 2
+------------------------------------
+---Serial para la prueba de VISUAL: SN-0572;20180514L
+------------------------------------
+ FECHAServidor 2021-08-26 08:47:21.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:47:21|Visual|clr213|SN-0572;20180514L|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:47:21|Visual|clr213|SN-0572;20180514L|1||19589220
+Error en el metodo pruebaInspeccionSensorial(): Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+Voy a crear obj Conecct url jdbc:mysql://127.0.0.1:3306/db_cda?zeroDateTimeBehavior=convertToNull

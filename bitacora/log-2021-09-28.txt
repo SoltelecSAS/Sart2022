@@ -1,0 +1,58 @@
+2021-09-28 08:38:16 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 08:38:16 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 08:38:54 38310 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 08:38:54 38310 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 12:02:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-28 12:02:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-28 12:06:48 266672 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-28 12:06:48 266672 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-28 14:23:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-28 14:23:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-28 14:25:30 123363 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 14:25:30 123363 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 14:29:16 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:29:16 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:42:34 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:42:34 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:48:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:48:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:50:35 115962 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 14:50:35 115962 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 14:50:48 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:50:48 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:53:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:53:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:59:07 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 14:59:07 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:00:05 57405 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:00:05 57405 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:08:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:08:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:12:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:12:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:15:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:15:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:24:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:24:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:27:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:27:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:28:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:28:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:30:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:30:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:30:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:30:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:31:28 60898 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:31:28 60898 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:33:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:33:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:34:13 48315 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:34:13 48315 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-28 15:51:10 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:51:10 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:55:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 15:55:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 16:04:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 16:04:27 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-28 16:09:47 319928 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-28 16:09:47 319928 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa

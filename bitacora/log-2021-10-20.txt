@@ -1,0 +1,322 @@
+2021-10-20 08:37:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:37:21 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:40:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:40:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:43:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:43:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:43:56 7039 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 08:43:56 7039 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 08:45:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:45:24 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:45:44 20466 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 08:45:44 20466 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 08:48:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:48:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:51:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:51:00 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:57:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 08:57:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 09:00:03 152319 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 09:00:03 152319 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 09:11:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:11:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:11:20 458  [AWT-EventQueue-0] ERROR igrafica  - No se puede iniciar el sensor de Temperatura
+y de humedad relativa
+java.io.FileNotFoundException: .\propiedades.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at utiltermohigrometro.UtilPropiedades.cargarPropiedad(UtilPropiedades.java:26)
+	at com.soltelec.igrafica.Frm_UICentral.inciarHiloHumedadTemperatura(Frm_UICentral.java:1190)
+	at com.soltelec.igrafica.Frm_UICentral.<init>(Frm_UICentral.java:108)
+	at com.soltelec.igrafica.FrmLogin.btn_ingresarActionPerformed(FrmLogin.java:319)
+	at com.soltelec.igrafica.FrmLogin.access$100(FrmLogin.java:34)
+	at com.soltelec.igrafica.FrmLogin$2.actionPerformed(FrmLogin.java:120)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener$Actions.actionPerformed(BasicButtonListener.java:303)
+	at javax.swing.SwingUtilities.notifyAction(SwingUtilities.java:1668)
+	at javax.swing.JComponent.processKeyBinding(JComponent.java:2882)
+	at javax.swing.JComponent.processKeyBindings(JComponent.java:2929)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2845)
+	at java.awt.Component.processEvent(Component.java:6316)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1954)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:835)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1103)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:974)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:800)
+	at java.awt.Component.dispatchEventImpl(Component.java:4760)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2021-10-20 09:11:20 458  [AWT-EventQueue-0] ERROR igrafica  - No se puede iniciar el sensor de Temperatura
+y de humedad relativa
+java.io.FileNotFoundException: .\propiedades.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at utiltermohigrometro.UtilPropiedades.cargarPropiedad(UtilPropiedades.java:26)
+	at com.soltelec.igrafica.Frm_UICentral.inciarHiloHumedadTemperatura(Frm_UICentral.java:1190)
+	at com.soltelec.igrafica.Frm_UICentral.<init>(Frm_UICentral.java:108)
+	at com.soltelec.igrafica.FrmLogin.btn_ingresarActionPerformed(FrmLogin.java:319)
+	at com.soltelec.igrafica.FrmLogin.access$100(FrmLogin.java:34)
+	at com.soltelec.igrafica.FrmLogin$2.actionPerformed(FrmLogin.java:120)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener$Actions.actionPerformed(BasicButtonListener.java:303)
+	at javax.swing.SwingUtilities.notifyAction(SwingUtilities.java:1668)
+	at javax.swing.JComponent.processKeyBinding(JComponent.java:2882)
+	at javax.swing.JComponent.processKeyBindings(JComponent.java:2929)
+	at javax.swing.JComponent.processKeyEvent(JComponent.java:2845)
+	at java.awt.Component.processEvent(Component.java:6316)
+	at java.awt.Container.processEvent(Container.java:2239)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.KeyboardFocusManager.redispatchEvent(KeyboardFocusManager.java:1954)
+	at java.awt.DefaultKeyboardFocusManager.dispatchKeyEvent(DefaultKeyboardFocusManager.java:835)
+	at java.awt.DefaultKeyboardFocusManager.preDispatchKeyEvent(DefaultKeyboardFocusManager.java:1103)
+	at java.awt.DefaultKeyboardFocusManager.typeAheadAssertions(DefaultKeyboardFocusManager.java:974)
+	at java.awt.DefaultKeyboardFocusManager.dispatchEvent(DefaultKeyboardFocusManager.java:800)
+	at java.awt.Component.dispatchEventImpl(Component.java:4760)
+	at java.awt.Container.dispatchEventImpl(Container.java:2297)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:760)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:84)
+	at java.awt.EventQueue$4.run(EventQueue.java:733)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:74)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:730)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:205)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2021-10-20 09:11:37 17417 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 09:11:37 17417 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 09:17:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:17:26 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:17:35 8681 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 09:17:35 8681 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 09:18:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:18:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 09:40:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 09:40:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 09:42:46 111340 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 09:42:46 111340 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 09:51:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 09:51:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:12:52 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 10:12:52 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 10:30:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:30:18 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:30:54 2    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:30:54 2    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:31:00 5333 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 10:31:00 5333 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 10:50:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:50:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:51:25 65485 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:51:25 65485 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:54:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:54:11 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 10:55:17 65439 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:55:17 65439 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:56:21 130404 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:56:21 130404 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:57:25 193413 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 10:57:25 193413 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 11:27:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 11:27:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 11:29:01 65530 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 11:29:01 65530 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 11:35:59 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 11:35:59 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 11:37:05 65436 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 11:37:05 65436 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 11:59:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 11:59:17 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:01:05 107580 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:01:05 107580 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:05:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:05:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:10:46 338722 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:10:46 338722 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:11:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:11:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:16:15 258890 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:16:15 258890 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:41:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:41:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:41:56 50014 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:41:56 50014 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:42:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:42:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:43:05 51149 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:43:05 51149 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:45:08 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:45:08 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:46:19 71327 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:46:19 71327 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:48:23 195166 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:48:23 195166 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:49:03 235261 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 12:49:03 235261 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 12:51:16 368776 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:51:16 368776 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 12:51:54 406011 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:51:54 406011 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 12:57:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 12:57:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 13:04:41 458579 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 13:04:41 458579 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 14:06:35 4172626 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 14:06:35 4172626 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 14:06:42 4178707 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 14:06:42 4178707 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 14:27:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:27:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:28:07 9677 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:28:07 9677 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:29:05 67248 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:29:05 67248 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:53:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:53:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:53:49 27265 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:53:49 27265 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:55:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:55:35 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 14:55:55 20741 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 14:55:55 20741 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:01:40 365495 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:01:40 365495 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:03:56 501399 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:03:56 501399 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:05:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:05:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:05:42 4087 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 15:05:42 4087 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 15:05:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:05:54 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:06:02 8594 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:06:02 8594 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:07:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:07:40 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:07:46 6163 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:07:46 6163 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:10:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:10:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:11:03 29225 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:11:03 29225 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:31:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:31:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:31:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:31:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:32:02 5390 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:32:02 5390 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:37:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:37:07 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:37:16 9323 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:37:16 9323 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:38:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:38:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 15:38:44 12874 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 15:38:44 12874 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:27:14 2922483 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:27:14 2922483 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:29:59 3087477 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:29:59 3087477 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:40:04 3692588 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:40:04 3692588 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:41:59 3807839 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 16:41:59 3807839 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 16:42:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:42:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:45:02 143523 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:45:02 143523 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:45:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:45:44 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:46:17 33203 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 16:46:17 33203 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-20 16:47:36 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:47:36 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-20 16:49:18 102089 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:49:18 102089 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:54:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 16:54:14 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 16:54:33 19689 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:54:33 19689 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:56:20 126345 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:56:20 126345 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:56:36 142234 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:56:36 142234 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:56:49 154880 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:56:49 154880 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 16:57:35 201522 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:57:35 201522 [AWT-EventQueue-0] INFO  igrafica  - se realiza validacion del opacimetro, usuario logeado :Usuario Soltelec
+2021-10-20 16:57:45 211333 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 16:57:45 211333 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 17:08:03 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:08:03 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:08:07 4573 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 17:08:07 4573 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-20 17:08:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:08:38 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:09:05 27133 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:09:05 27133 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:10:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:10:23 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:10:28 5545 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:10:28 5545 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:14:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:14:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:14:10 6295 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:14:10 6295 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:16:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:16:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:16:09 4462 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:16:09 4462 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:18:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:18:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:18:53 14486 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:18:53 14486 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:20:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:20:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-20 17:20:49 9447 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809
+2021-10-20 17:20:49 9447 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: HPQ809

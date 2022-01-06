@@ -1,0 +1,19 @@
+2021-09-25 08:43:32 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-25 08:43:32 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-25 08:45:32 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-25 08:45:32 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-25 08:45:46 14311 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: CMN705
+2021-09-25 08:45:46 14311 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: CMN705
+2021-09-25 08:45:51 19707 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-09-25 08:45:51 19707 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------Creando Evento para la prueba-------------------
+2021-09-25 08:45:51 19707 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteSicov  - ------------------------------------------------------------
+2021-09-25 08:45:51 19712 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - -----------------------------------------------------------
+2021-09-25 08:45:51 19712 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ Enviando Evento-------------------------
+2021-09-25 08:45:51 19712 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------ ----------------------------------------
+2021-09-25 08:45:52 19986 [AWT-EventQueue-0] WARN  org.apache.axis.utils.JavaUtils  - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+2021-09-25 08:45:52 20152 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Enviado el eveto------------------------------------
+2021-09-25 08:45:52 20153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-09-25 08:45:52 20153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - --Trama a enviar : 858|2021-09-25 08:45:|Luces|CMN705|4810685|2||19589220
+2021-09-25 08:45:52 20153 [AWT-EventQueue-0] INFO  com.soltelec.indra.ClienteIndra  - ------------------------------------------------------
+2021-09-25 08:46:29 177474 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-25 08:46:29 177474 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

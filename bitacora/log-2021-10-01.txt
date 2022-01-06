@@ -1,0 +1,54 @@
+2021-10-01 12:30:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:30:47 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:34:02 195417 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 12:34:02 195417 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 12:37:28 401296 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:37:28 401296 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:45:20 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:45:20 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:47:49 149064 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 12:47:49 149064 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 12:52:18 417982 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:52:18 417982 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:52:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:52:57 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 12:53:18 20787 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:53:18 20787 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 12:57:36 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-01 12:57:36 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-01 12:57:44 7976 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 12:57:44 7976 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:16:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:16:58 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:17:06 7807 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:17:06 7807 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:19:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:19:04 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:19:12 7518 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:19:12 7518 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:19:42 37755 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 14:19:42 37755 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 14:20:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:20:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:26:27 358188 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:26:27 358188 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:44:32 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:44:32 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 14:44:52 20286 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 14:44:52 20286 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 16:27:40 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 16:27:40 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 16:33:00 320288 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386 
+2021-10-01 16:33:00 320288 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386 
+2021-10-01 16:34:07 386960 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 16:34:07 386960 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-01 16:53:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 16:53:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-01 16:54:11 69887 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 16:54:11 69887 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 16:54:29 87291 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-01 16:54:29 87291 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-01 17:02:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-01 17:02:20 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-01 17:02:27 6809 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386
+2021-10-01 17:02:27 6809 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: HMN386

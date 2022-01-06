@@ -1,0 +1,324 @@
+paso validando
+[EL Warning]: metadata: 2021-08-26 08:52:08.591--ServerSession(1202273210)--Class [com.soltelec.model.Calibraciones] specifies discriminatorType=INTEGER and uses [Calibraciones] as the discriminatorValue.  That value cannot be converted to an integer.  We will attempt to use this value in String format.
+[EL Info]: 2021-08-26 08:52:09.065--ServerSession(1202273210)--EclipseLink, version: Eclipse Persistence Services - 2.5.0.v20130507-3faac2b
+[EL Info]: connection: 2021-08-26 08:52:09.537--ServerSession(1202273210)--file:/C:/opt/sst/SartRestructurado/Ejecutable/SART.jar_ProyectoCDAPU_url=jdbc:mysql://127.0.0.1:3306/db_cda?zeroDateTimeBehavior=convertToNull_user=root login successful
+Fecha de validacion: 24/09/2022
+Fecha de Hoy: 26/08/2021
+readArtisan
+ INCIE EL ARTISAN PARAMETRO ARTISAN 
+ FINALICE ARTISAN PARAMETRO 
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-------------------------------------------------------------------
+--------------realizando pruebaInspeccionSensorial-----------------
+--------------------------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: PROFUNDIMETRO
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS SN-0572;20180514L Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@14fdc9c: select e.serialresolucion from equipos e where e.tipo = 'PROFUNDIMETRO' and e.Pista = 2
+------------------------------------
+---Serial para la prueba de VISUAL: SN-0572;20180514L
+------------------------------------
+ FECHAServidor 2021-08-26 08:52:38.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:52:38|Visual|clr213|SN-0572;20180514L|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:52:38|Visual|clr213|SN-0572;20180514L|1||19589220
+Error en el metodo pruebaInspeccionSensorial(): Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-----------------------------------------------------
+--------------realizando Desviacion-----------------
+-----------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: DESVIACION
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS 20180511A Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@2cd7a9b2: select e.serialresolucion from equipos e where e.tipo = 'DESVIACION' and e.Pista = 2
+ FECHAServidor 2021-08-26 08:53:26.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:53:26|FAS|clr213|20180511A|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:53:26|FAS|clr213|20180511A|1||19589220
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-------------------------------------------------------------------
+--------------realizando pruebaInspeccionSensorial-----------------
+--------------------------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: PROFUNDIMETRO
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS SN-0572;20180514L Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@31c0a067: select e.serialresolucion from equipos e where e.tipo = 'PROFUNDIMETRO' and e.Pista = 2
+------------------------------------
+---Serial para la prueba de VISUAL: SN-0572;20180514L
+------------------------------------
+ FECHAServidor 2021-08-26 08:54:21.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:54:21|Visual|clr213|SN-0572;20180514L|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:54:21|Visual|clr213|SN-0572;20180514L|1||19589220
+Error en el metodo pruebaInspeccionSensorial(): Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-------------------------------------------------------------------
+--------------realizando pruebaInspeccionSensorial-----------------
+--------------------------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: PROFUNDIMETRO
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS SN-0572;20180514L Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@13755582: select e.serialresolucion from equipos e where e.tipo = 'PROFUNDIMETRO' and e.Pista = 2
+------------------------------------
+---Serial para la prueba de VISUAL: SN-0572;20180514L
+------------------------------------
+ FECHAServidor 2021-08-26 08:55:24.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:55:24|Visual|clr213|SN-0572;20180514L|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:55:24|Visual|clr213|SN-0572;20180514L|1||19589220
+Error en el metodo pruebaInspeccionSensorial(): Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-------------------------------------------------------------------
+--------------realizando pruebaInspeccionSensorial-----------------
+--------------------------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: PROFUNDIMETRO
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS SN-0572;20180514L Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@7a3b439c: select e.serialresolucion from equipos e where e.tipo = 'PROFUNDIMETRO' and e.Pista = 2
+------------------------------------
+---Serial para la prueba de VISUAL: SN-0572;20180514L
+------------------------------------
+ FECHAServidor 2021-08-26 08:55:55.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:55:55|Visual|clr213|SN-0572;20180514L|1||19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:55:55|Visual|clr213|SN-0572;20180514L|1||19589220
+Error en el metodo pruebaInspeccionSensorial(): Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+ voy a buscar usuario 
+ pase de fusionamiento del contexto de persistencia 
+ capturo hoja y demas logica 
+ c1
+ el tipo is 1
+ c3
+ c4
+-----------------------------------------------------
+--------------realizando pruebaLuces-----------------
+-----------------------------------------------------
+----------------------------------------------------
+-----------getPruebaNoFinalizadaTipo----------------
+----------------------------------------------------
+----------------------------------------------------
+-------------------consultaDB-----------------------
+----------------------------------------------------
+Longitud de la lista : 1
+-------------------------------------------
+------------------tipoLux-- : Serial
+-------------------------------------------
+----------------------------------------------------
+----------------BusqSerialRegistrado----------------
+----------------------------------------------------
+Consulta serial : 
+Query : select e.serialresolucion from equipos e where e.tipo = ? and e.Pista = ?
+ Parametro 1: LUCES
+ Parametro 2: 2
+ COD EQUIPO DEL BD IS 4810685 Ejecutacom.mysql.jdbc.JDBC4PreparedStatement@61050a10: select e.serialresolucion from equipos e where e.tipo = 'LUCES' and e.Pista = 2
+estoy entrando a Jdialogo para implementar pruebas de luces xxx
+nivelParseo Serial
+localhost
+--------------------------------------------------
+---------  Cargar Longitud Trama Leer  -----------
+--------------------------------------------------
+.... Buscando variable valorInicialTrama.....
+Se tomaran los valores por defectos para las variables : valorInicialTrama / valorFinalTramajava.lang.NullPointerException
+ valorInicialTrama : 6
+ valorFinalTrama : 11
+Error en el metodo : cargarLongitudTramaLeer()java.lang.NullPointerException
+readArtisanSLAVE
+readArtisanSLAVE
+---------------------------------------------------
+---Conectandose con el puerto serial---------------
+---------------------------------------------------
+WARNING:  RXTX Version mismatch
+	Jar version = RXTX-2.2pre1
+	native lib Version = RXTX-2.2pre2
+readArtisanSLAVE
+REGISTRO BLOQUEDO A BAJO NIVEL 
+aparto idSicov para prueba
+Estoy Ejecutando el stored Procedure 
+TEST 130818 tipo 2
+ FECHAServidor 2021-08-26 08:56:35.0
+-- Url Servicio Sicov : http://192.168.1.229:8056/sicov.asmx
+-- Url Servicio Encript : http://192.168.1.53:8080/wsEncripcion/cliente.php?cadena=
+---------------------------------------------
+-------------------ClienteIndra--------------
+---------------------------------------------
+-- Setiando parametros a ws 
+----Invocando el metodo : setEvento()
+------------------------------------------- cadena : 858|2021-08-26 08:56:35|Luces|clr213|4810685|2| |19589220
+---------------------encript--------------------------------
+---------------------------------------- urlServicio : 858|2021-08-26 08:56:35|Luces|clr213|4810685|2| |19589220
+Error en el metodo :pruebaLuces() Error al encriptar los datos Connection timed out: connectError al encriptar los datos Connection timed out: connect
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE
+readArtisanSLAVE

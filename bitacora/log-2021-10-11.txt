@@ -1,0 +1,120 @@
+2021-10-11 08:36:45 161916882 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 08:36:45 161916882 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 08:40:48 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 08:40:48 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 08:41:35 47328 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: ucp638
+2021-10-11 08:41:35 47328 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: ucp638
+2021-10-11 08:42:57 129524 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: ucp638
+2021-10-11 08:42:57 129524 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: ucp638
+2021-10-11 08:44:20 211794 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: UDZ585
+2021-10-11 08:44:20 211794 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: UDZ585
+2021-10-11 08:44:55 247066 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: tbh29e
+2021-10-11 08:44:55 247066 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: tbh29e
+2021-10-11 09:27:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 09:27:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 09:27:49 15473 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: KCP74D
+2021-10-11 09:27:49 15473 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: KCP74D
+2021-10-11 09:27:59 25829 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 09:27:59 25829 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 09:32:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 09:32:42 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 09:33:11 29073 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CMN993
+2021-10-11 09:33:11 29073 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: CMN993
+2021-10-11 09:33:19 37468 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993
+2021-10-11 09:33:19 37468 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993
+2021-10-11 09:34:46 124486 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 09:34:46 124486 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 09:40:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 09:40:56 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 09:41:01 4636 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:41:01 4636 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:41:34 38086 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:41:34 38086 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:41:57 60700 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:41:57 60700 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CMN993 
+2021-10-11 09:50:16 559918 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 09:50:16 559918 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 09:57:18 981726 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 09:57:18 981726 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:02:06 1270064 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:02:06 1270064 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:05:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:05:33 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:05:39 5491 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:05:39 5491 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:07:29 115246 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:07:29 115246 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:09:05 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:09:05 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:09:21 15568 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:09:21 15568 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:10:15 69849 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:10:15 69849 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:10:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:10:37 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:11:02 25110 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:11:02 25110 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:12:39 122465 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:12:39 122465 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:13:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:13:01 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:13:11 10562 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:13:11 10562 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:15:56 175086 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:15:56 175086 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 10:33:13 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:33:13 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 10:33:28 14751 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:33:28 14751 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:35:06 113116 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:35:06 113116 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:53:27 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 10:53:27 1    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 10:53:47 20792 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 10:53:47 20792 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 14:30:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 14:30:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 14:31:09 13850 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 14:31:09 13850 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 14:46:20 924560 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 14:46:20 924560 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-10-11 14:50:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 14:50:31 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 14:50:44 13051 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 14:50:44 13051 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CFM735
+2021-10-11 16:05:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 16:05:30 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-11 16:05:55 25609 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:05:55 25609 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:27:26 1316074 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:27:26 1316074 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:34:35 1744995 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:34:35 1744995 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:35:10 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:35:10 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:36:14 63765 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:36:14 63765 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:40:01 290591 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:40:01 290591 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:42:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:42:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:42:17 10626 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:42:17 10626 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:42:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:42:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:42:56 7125 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:42:56 7125 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:48:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:48:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:48:41 12865 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:48:41 12865 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:50:28 119423 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:50:28 119423 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:50:37 467672 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:50:37 467672 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-10-11 16:54:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:54:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-10-11 16:54:34 6469 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-10-11 16:54:34 6469 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-10 16:57:43 -2678204644 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D
+2021-09-10 16:57:43 -2678204644 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Lucespara vehiculo de placas: KCP74D

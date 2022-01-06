@@ -1,0 +1,30 @@
+2021-09-30 14:26:50 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:26:50 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:27:45 54851 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:27:45 54851 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:32:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:32:02 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:32:14 12410 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:32:14 12410 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:36:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:36:28 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:37:17 49911 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:37:17 49911 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:42:59 391358 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:42:59 391358 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:58:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:58:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 14:59:08 65541 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 14:59:08 65541 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 15:05:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 15:05:03 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :U
+2021-09-30 15:05:46 43612 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: FTK226
+2021-09-30 15:05:46 43612 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: FTK226
+2021-09-30 15:06:11 67887 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-30 15:06:11 67887 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-30 16:58:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-30 16:58:55 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-30 17:00:45 110473 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 17:00:45 110473 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Inspeccion Sensorialpara vehiculo de placas: IIV462
+2021-09-30 17:11:30 755047 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa
+2021-09-30 17:11:30 755047 [AWT-EventQueue-0] INFO  igrafica  - Usuario: U cierra el programa

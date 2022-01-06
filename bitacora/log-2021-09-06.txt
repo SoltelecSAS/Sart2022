@@ -1,0 +1,34 @@
+2021-09-06 10:40:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 10:40:06 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 10:40:49 43162 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 10:40:49 43162 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 10:57:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 10:57:25 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:15:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:15:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:18:35 185676 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:18:35 185676 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:21:38 369237 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:21:38 369237 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:22:15 405572 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:22:15 405572 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:23:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:23:22 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:24:20 58185 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:24:20 58185 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:25:05 103618 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:25:05 103618 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:26:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:26:29 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:27:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:27:49 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:29:00 70854 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:29:00 70854 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:30:54 184771 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:30:54 184771 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:31:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:31:15 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-09-06 14:33:33 137549 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:33:33 137549 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Frenospara vehiculo de placas: bbt900
+2021-09-06 14:35:48 272638 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
+2021-09-06 14:35:48 272638 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa

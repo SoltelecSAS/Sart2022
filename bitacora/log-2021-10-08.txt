@@ -1,0 +1,4 @@
+2021-10-08 09:12:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-08 09:12:39 0    [AWT-EventQueue-0] INFO  igrafica  - Aplicacion iniciada por :u
+2021-10-08 09:14:33 113596 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CBW087
+2021-10-08 09:14:33 113596 [AWT-EventQueue-0] INFO  igrafica  - Usuario Usuario Soltelec realiza prueba de :Gasespara vehiculo de placas: CBW087
