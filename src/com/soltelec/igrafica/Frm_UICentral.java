@@ -632,7 +632,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
         String strSerial = "";
 
         try {
-            System.out.println("entro a verificar la fecha para la contraseña");
+            
             UtilInfoOpacidad utilInfoOpacidad = new UtilInfoOpacidad();
             Long serialOpacimetro = UtilFugas.obtenerSerialOpacimetro();
             equipo = controller.findEquipoBySerial(serialOpacimetro.toString());
@@ -640,6 +640,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
             fechaVerificacion = sdf.format(calibracion.getFecha());
             infoVerificacion = "Ultima fecha de verificacion: " + fechaVerificacion;
             infoPruebas = utilInfoOpacidad.obtenerInfoPruebas(equipo.getSerialresolucion());
+            System.out.println("verifico la fecha de la contraseña ");
 
             equipo.setMarca(controller.findMarcaBySerial(equipo.getSerial()));
         } catch (SQLException | ClassNotFoundException | IOException e) {

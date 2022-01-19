@@ -695,6 +695,7 @@ public class Frm_Placas extends javax.swing.JDialog
         pass = new String(p);//pasword
 
         //Traer la informacion del usuario
+        
         System.out.println(" voy a buscar usuario ");
         Usuarios usuarioJPA = controladorVerificar.getUsuarioByNick(nombre_usuario, em);
         usr = usuarioJPA;
@@ -723,6 +724,7 @@ public class Frm_Placas extends javax.swing.JDialog
         {
             config = new BufferedReader(new FileReader(new File("configuracion.txt")));
             String line;
+            System.out.println("entro a validar el tipo de pista a la que entro");
             while (!config.readLine().startsWith("[TIPOPISTA]")) 
             {
             }

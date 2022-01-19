@@ -1,2 +1,0 @@
-2021-09-17 08:39:11 55001624 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
-2021-09-17 08:39:11 55001624 [AWT-EventQueue-0] INFO  igrafica  - Usuario: u cierra el programa
