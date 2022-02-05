@@ -615,7 +615,7 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
             if (jCheckBox16.isSelected()) {
                 persistir = insertarDefectosDb(statement, 10096, idPrueba);
             } else {
-                if (!validarMedidasLabradoRepuesto(permisibleLabrado)) {
+                if (!validarMedidasLabradoRepuesto(permisibleLabrado,idPrueba )) {
                     System.out.println("entra a la opcion de false");
                     JOptionPane.showMessageDialog(null, "Selecione defectos de labrado en la llanta de repuesto", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
@@ -717,40 +717,70 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
         System.out.println("---------------------------------------------------");
         System.out.println("--            validarValoresMedidas              --");
         System.out.println("---------------------------------------------------");
-        boolean flag=true;
-        try 
-        {
-            List<Double> listMedidas= cargarMedidasLabradoDB(idPrueba);
-            if (listMedidas.size() > 0) 
-            {
-                for (int i = 0 ; i < 4 ; i++ ) 
-                {
-                    if (listMedidas.get(i) < permisible) 
-                    {
+        boolean flag = true;
+        try {
+            List<Double> listMedidas = cargarMedidasLabradoDB(idPrueba);
+            if (listMedidas.size() > 0) {
+                for (int i = 0; i < listMedidas.size(); i++) {
+                    if (listMedidas.get(i) < permisible) {
                         flag = false;
                     }
+                    System.out.println(" valor de la medida " + i + " : " + listMedidas.get(i));
                 }
-            }else{
-                 flag = false;
+            } else {
+                flag = false;
             }
-        } catch (Exception e) 
-        {
+        } catch (Exception e) {
             System.out.println("Error en el metodo: validarValoresMedidas()" + e.getMessage() + e.getLocalizedMessage());
             Mensajes.mostrarExcepcion(e);
         }
-         return flag;
+        return flag;
     }
-    
+
     //JFM-----------------------------------------------------------
-    
-    
-    private boolean validarMedidasLabradoRepuesto(double permisible)
-    {
+    /**
+     * Metodo para consultar las medidas de la llanta de repuesto y asi mismo en el formulario muestre el mensaje en caso de que se deba
+     *insertar el defecto 
+     *
+     * @autor Felipe Martin
+     * @param permsible
+     * @param idPrueba
+     * @return flag
+     */
+    private boolean validarMedidasLabradoRepuesto(double permisible, int idPrueba) {
         System.out.println("---------------------------------------------------");
         System.out.println("--      validarMedidasLabradoRepuesto            --");
         System.out.println("---------------------------------------------------");
-        boolean flag=true;
-        try 
+        boolean flag = true;
+        PreparedStatement ps;
+        ResultSet rs;
+        String sql;
+        List<Double> listLabradoRepuesto = new ArrayList<Double>();
+        sql = sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN (9040,9041,9042)AND m.TEST=?;";
+        try {
+            if (conexion != null) {
+                ps = (PreparedStatement) conexion.prepareStatement(sql);
+                ps.setInt(1, idPrueba);
+                rs = ps.executeQuery();
+                while (rs.next()) {
+                    listLabradoRepuesto.add(rs.getDouble(1));
+                }
+            } else {
+                JOptionPane.showMessageDialog(this, "Error de conexion con db", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+            System.out.println("valor size de listLabradoRepuesto: " + listLabradoRepuesto.size());
+            System.out.println("valor del permisible " + permisible);
+            if (listLabradoRepuesto.size() == 0) {
+                flag = false;
+                return flag;
+            } else {
+                for (int i = 0; i < listLabradoRepuesto.size(); i++) {
+                    if (listLabradoRepuesto.get(i) < permisible) {
+                        flag = false;
+                    }
+                }
+            }
+            /* try 
         {
             List<Double> listMedidas= cargarMedidasLabradoDB(idPrueba);
            System.out.println("size de las medidas de labrado :" + listMedidas.size());
@@ -770,12 +800,13 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
                     } 
                 }
            
-        } catch (Exception e) 
-        {
+        } */
+
+        } catch (Exception e) {
             System.out.println("Error en el metodo: validarValoresMedidas()" + e.getMessage() + e.getLocalizedMessage());
             Mensajes.mostrarExcepcion(e);
         }
-         return flag;
+        return flag;
     }
     
    //JFM-----------------------------------------------------------
@@ -802,7 +833,10 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
             List valor=UtilPropiedadesSart.cargarPropiedad("configuracion/ConfigMedidas.properties"); 
             if (valor.size()>0 ) 
             {
-                sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+") AND m.TEST=?";
+                System.out.println("valor de la lngitud de valor : "+ valor.size());
+               // sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+") AND m.TEST=?";
+               sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+","+valor.get(9)+","+valor.get(10)+","+valor.get(11)+","+valor.get(12)+","+valor.get(13)+","+valor.get(14)+","+valor.get(15)+","+valor.get(16)+","+valor.get(17)+","+valor.get(18)+","+valor.get(19)+","+valor.get(20)+") AND m.TEST=?";
+               System.out.println(" sql que se ejecuta en cargarMedidasLabradoDB : " + sql);
                 if (conexion != null) 
                 {
                     ps = (PreparedStatement) conexion.prepareStatement(sql);

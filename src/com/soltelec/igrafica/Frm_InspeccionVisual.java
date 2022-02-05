@@ -541,6 +541,7 @@ public class Frm_InspeccionVisual extends javax.swing.JDialog {
             //JOptionPane.showMessageDialog(null, "OBtener oprimido = " +nrei.obtener_oprimido());
             nrei.reiniciarVariable();//Reiniciar variable de clase para que quede preparada para comprobar otro boton
         }
+        lab_revicionInterior.setEnabled(false);
     }//GEN-LAST:event_lab_revicionInteriorMouseClicked
 
     private void lab_revicionInteriorMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_revicionInteriorMouseEntered
@@ -575,6 +576,8 @@ public class Frm_InspeccionVisual extends javax.swing.JDialog {
             bloquearRExterior = true;
             nrei.reiniciarVariable();//Reiniciar variable de clase para que quede preparada para comprobar otro boton
         }
+        
+        
     }//GEN-LAST:event_lab_revicionMouseClicked
 
     private void lab_revicionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_revicionMouseEntered
@@ -646,7 +649,7 @@ public class Frm_InspeccionVisual extends javax.swing.JDialog {
             bloquearERuido = true;
             //JOptionPane.showMessageDialog(null, "OBtener oprimido = " +nrei.obtener_oprimido());
             nrei.reiniciarVariable();//Reiniciar variable de clase para que quede preparada para comprobar otro boton
-        }
+        }        
     }//GEN-LAST:event_lab_ruidoMouseClicked
 
     private void lab_ruidoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_ruidoMouseEntered
@@ -1125,7 +1128,7 @@ public class Frm_InspeccionVisual extends javax.swing.JDialog {
 //        frm_Ensen.setVisible(true);
             Frm_Ensenv2 frm_Ensenv2 = new Frm_Ensenv2((Frame) w, true, idPrueba);
             frm_Ensenv2.setVisible(true);
-            lab_ensenanza.setEnabled(false);
+            
         }
     }//GEN-LAST:event_lab_ensenanzaMouseClicked
 

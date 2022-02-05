@@ -35,7 +35,7 @@ import org.soltelec.luxometro.HiloPruebaLuxometro;
 import org.soltelec.luxometro.JDialogLuces;
 import org.soltelec.luxometro.lujan.JDialogLucesMotoLujan;
 import org.soltelec.luxometro.JDialogLucesMoto;
- import org.soltelec.luxometro.LecturaArchivoLuxometroMoon;
+import org.soltelec.luxometro.LecturaArchivoLuxometroMoon;
 import org.soltelec.luxometro.capelec.cap2500.JDialogLucesCarros;
 import org.soltelec.luxometro.capelec.cap2500.JDialogLucesMotoCapelec;          //Sonometro
 import org.soltelec.luxometro.chino.JDialogLuxometroChino;
@@ -73,12 +73,10 @@ import com.soltelec.util.MensajesOut;
 import org.apache.commons.lang.StringUtils;
 import utiltermohigrometro.UtilPropiedades;
 
-
 /**
  * @author Gerencia TIC
  */
-public class Frm_Placas extends javax.swing.JDialog 
-{
+public class Frm_Placas extends javax.swing.JDialog {
 
     static NoReiniciable placas_bd;
     static NoReiniciable nrei;
@@ -87,7 +85,7 @@ public class Frm_Placas extends javax.swing.JDialog
     private int valida_tipo;
     private String tipoPista = "";
     private int idVehiculoInt = 0, idPrueba = 0, idUsuario = 0;
-    boolean inspeccionVisual = false, luces = false, foto = false, desviacion = false,frenometro = false, suspension = false, ruido = false, gases = false,taximetro = false;
+    boolean inspeccionVisual = false, luces = false, foto = false, desviacion = false, frenometro = false, suspension = false, ruido = false, gases = false, taximetro = false;
     private BufferedReader config;
     static final org.apache.log4j.Logger log = org.apache.log4j.Logger.getLogger("igrafica");
     private String ipEquipo;
@@ -98,11 +96,11 @@ public class Frm_Placas extends javax.swing.JDialog
     private DialogoMotos dlgMotos = null;
     private DialogoVehiculo dlgVehiculo = null;
     private ControladorVerificar controladorVerificar = new ControladorVerificar();
-    private  boolean labradorealizada=false;
-    
-    public Frm_Placas() 
-    {
+    private boolean labradorealizada = false;
+
+    public Frm_Placas() {
     }
+
     /**
      * Creates new form Frm_Placas
      *
@@ -185,94 +183,93 @@ public class Frm_Placas extends javax.swing.JDialog
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(cam_contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
-                    .addComponent(cam_usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
-                    .addComponent(cam_placas, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE))
-                .addGap(21, 21, 21))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(btn_verificar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)))
-                .addContainerGap(146, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1)
+                                        .addComponent(jLabel3)
+                                        .addComponent(jLabel4))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(cam_contraseña, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                                        .addComponent(cam_usuario, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE)
+                                        .addComponent(cam_placas, javax.swing.GroupLayout.DEFAULT_SIZE, 258, Short.MAX_VALUE))
+                                .addGap(21, 21, 21))
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
+                                .addContainerGap())
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 604, Short.MAX_VALUE)
+                                .addContainerGap())
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jLabel2))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(159, 159, 159)
+                                                .addComponent(btn_verificar, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jButton2)))
+                                .addContainerGap(146, Short.MAX_VALUE))
         );
 
-        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btn_verificar, jButton2});
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[]{btn_verificar, jButton2});
 
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cam_placas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(cam_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(cam_contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btn_verificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel5)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(cam_placas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel3)
+                                        .addComponent(cam_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel4)
+                                        .addComponent(cam_contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btn_verificar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>                        
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
         doClose(0);
-    }                                        
+    }
+
     /**
-     * 
-     * 
+     *
+     *
      * @param indPrueba
      * @param revTec
      * @param normal
      * @param eventoDTO
-     * @param cda 
+     * @param cda
      */
-    private void regIdAuditoria(Integer indPrueba, int revTec, boolean normal,EventoDTO eventoDTO,Cda cda) 
-    {
+    private void regIdAuditoria(Integer indPrueba, int revTec, boolean normal, EventoDTO eventoDTO, Cda cda) {
         System.out.println("REGISTRO BLOQUEDO A BAJO NIVEL ");
-        if (revTec == 1) 
-        {
+        if (revTec == 1) {
             System.out.println("aparto idSicov para prueba");
             Query q;
             int nvoAudi = 0;
@@ -281,25 +278,25 @@ public class Frm_Placas extends javax.swing.JDialog
                 Thread.sleep(1900);
             } catch (InterruptedException ex) {
             }
-            em.clear();            
+            em.clear();
             em.getTransaction().begin();
             em.flush();
             q = em.createQuery("SELECT p FROM Pruebas  p WHERE p.idPruebas= :idPruebas");
             q.setParameter("idPruebas", indPrueba);
-            Pruebas test = (Pruebas) q.getSingleResult();           
+            Pruebas test = (Pruebas) q.getSingleResult();
             em.getTransaction().commit();
             /*if(test.getFinalizada().equalsIgnoreCase("N")){
                  System.out.println("id (Audi) NO APARTADO PRUEBA ABORTADA");
                 return ;
             }*/
-            if(test.getTipoPrueba().getTesttype()==3){
-                 System.out.println("id (Audi) NO APARTADO PRUEBA OF FOTO");
-                return ;
+            if (test.getTipoPrueba().getTesttype() == 3) {
+                System.out.println("id (Audi) NO APARTADO PRUEBA OF FOTO");
+                return;
             }
-            
+
             //************************************************************
             try {
-                Thread.sleep(377);                     
+                Thread.sleep(377);
                 em.getTransaction().begin();
                 q = em.createNativeQuery("SELECT MAX(SEQ_COUNT) from sequence WHERE SEQ_NAME = 'AUD_SICOV' ");
                 idAud = (Integer) q.getSingleResult();
@@ -308,7 +305,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 s.setSEQCOUNT(nvoAudi);
                 em.merge(s);
                 em.flush();
-                em.getTransaction().commit();                
+                em.getTransaction().commit();
             } catch (Exception ex1) {
                 em.getTransaction().rollback();
                 System.out.println("REGISTRO ESTUVO BLOQUEDO A BAJO NIVEL  se libera el resource");
@@ -318,26 +315,25 @@ public class Frm_Placas extends javax.swing.JDialog
             } catch (InterruptedException ex) {
             }
             //************************************************************            
-            em.getTransaction().begin();         
+            em.getTransaction().begin();
             if (normal == true) {
                 System.out.println("Estoy Ejecutando el stored Procedure ");
 
                 StoredProcedureQuery stQ = em.createStoredProcedureQuery("evtFechaRealPrueba");
-                 System.out.println("TEST "+test.getIdPruebas()+" tipo "+test.getTipoPrueba().getTesttype());
+                System.out.println("TEST " + test.getIdPruebas() + " tipo " + test.getTipoPrueba().getTesttype());
                 stQ.registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN);
                 stQ.registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN);
                 stQ.setParameter(1, test.getIdPruebas());
                 stQ.setParameter(2, test.getTipoPrueba().getTesttype());
                 stQ.executeUpdate();
                 em.flush();
-                
+
             }
             //************************************************************
             test.setFechaaborto(ipEquipo.concat(";").concat(String.valueOf(idAud)));
             em.merge(test);
-            em.getTransaction().commit();           
-            if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
-            {
+            em.getTransaction().commit();
+            if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                 ClienteSicov clienteIndra = new ClienteSicov();
                 if (test.getAbortada().equalsIgnoreCase("N")) {
                     eventoDTO.setIdEvento(2);
@@ -345,20 +341,20 @@ public class Frm_Placas extends javax.swing.JDialog
                 } else {
                     eventoDTO.setIdEvento(3);
                     Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "Enviando event 3 FINALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(test.getTipoPrueba().getNombretipoprueba()));
-                    if(test.getComentarioaborto()!=null){
-                         eventoDTO.setMensajeEvento(test.getComentarioaborto());
-                         Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "Prueba abortada por PLACA".concat(eventoDTO.getPlaca()).concat(" TIPO ABORTO: ").concat(test.getComentarioaborto()));
-                    }else{
+                    if (test.getComentarioaborto() != null) {
+                        eventoDTO.setMensajeEvento(test.getComentarioaborto());
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "Prueba abortada por PLACA".concat(eventoDTO.getPlaca()).concat(" TIPO ABORTO: ").concat(test.getComentarioaborto()));
+                    } else {
                         Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "Prueba abortada por PLACA".concat(eventoDTO.getPlaca()).concat(" TIPO ABORTO: NO ESPECIFICADO"));
-                    }                   
+                    }
                 }
                 String fecha = UtilSicov.askDate();
                 fecha = fecha.substring(0, fecha.length() - 2);
                 eventoDTO.setFecha(fecha);
-                if (test.getTipoPrueba().getTesttype()==5 || test.getTipoPrueba().getTesttype()==6 || test.getTipoPrueba().getTesttype()==4) {
+                if (test.getTipoPrueba().getTesttype() == 5 || test.getTipoPrueba().getTesttype() == 6 || test.getTipoPrueba().getTesttype() == 4) {
                     eventoDTO.setNombrePrueba("FAS");
                 }
-                
+
                 RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
                 if (respuesta.getCodigoRespuesta().equals("0")) {
                     Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE FINALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(test.getTipoPrueba().getNombretipoprueba()));
@@ -372,24 +368,22 @@ public class Frm_Placas extends javax.swing.JDialog
             System.out.println("id (Audi) apartado con exito");
         }
     }
-   
+
     /**
      * @autor ELKIN B
-     * 
+     *
      * @param indPrueba
      * @param revTec
      * @param normal
-     * @param cda 
+     * @param cda
      */
-    private void regIdAuditoriaRuido(Integer indPrueba, int revTec, boolean normal,Cda cda)
-    {
+    private void regIdAuditoriaRuido(Integer indPrueba, int revTec, boolean normal, Cda cda) {
         System.out.println("---------------------------------------------------");
         System.out.println("----------------regIdAuditoriaRuicdo---------------");
         System.out.println("---------------------------------------------------");
-        
+
         System.out.println("REGISTRO BLOQUEDO A BAJO NIVEL ");
-        if (revTec == 1) 
-        {
+        if (revTec == 1) {
             System.out.println("aparto idSicov para prueba");
             Query q;
             int nvoAudi = 0;
@@ -398,25 +392,25 @@ public class Frm_Placas extends javax.swing.JDialog
                 Thread.sleep(1900);
             } catch (InterruptedException ex) {
             }
-            em.clear();            
+            em.clear();
             em.getTransaction().begin();
             em.flush();
             q = em.createQuery("SELECT p FROM Pruebas  p WHERE p.idPruebas= :idPruebas");
             q.setParameter("idPruebas", indPrueba);
-            Pruebas test = (Pruebas) q.getSingleResult();           
+            Pruebas test = (Pruebas) q.getSingleResult();
             em.getTransaction().commit();
             /*if(test.getFinalizada().equalsIgnoreCase("N")){
                  System.out.println("id (Audi) NO APARTADO PRUEBA ABORTADA");
                 return ;
             }*/
-            if(test.getTipoPrueba().getTesttype()==3){
-                 System.out.println("id (Audi) NO APARTADO PRUEBA OF FOTO");
-                return ;
+            if (test.getTipoPrueba().getTesttype() == 3) {
+                System.out.println("id (Audi) NO APARTADO PRUEBA OF FOTO");
+                return;
             }
-            
+
             //************************************************************
             try {
-                Thread.sleep(377);                     
+                Thread.sleep(377);
                 em.getTransaction().begin();
                 q = em.createNativeQuery("SELECT MAX(SEQ_COUNT) from sequence WHERE SEQ_NAME = 'AUD_SICOV' ");
                 idAud = (Integer) q.getSingleResult();
@@ -425,7 +419,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 s.setSEQCOUNT(nvoAudi);
                 em.merge(s);
                 em.flush();
-                em.getTransaction().commit();                
+                em.getTransaction().commit();
             } catch (Exception ex1) {
                 em.getTransaction().rollback();
                 System.out.println("REGISTRO ESTUVO BLOQUEDO A BAJO NIVEL  se libera el resource");
@@ -435,24 +429,24 @@ public class Frm_Placas extends javax.swing.JDialog
             } catch (InterruptedException ex) {
             }
             //************************************************************            
-            em.getTransaction().begin();         
+            em.getTransaction().begin();
             if (normal == true) {
                 System.out.println("Estoy Ejecutando el stored Procedure ");
 
                 StoredProcedureQuery stQ = em.createStoredProcedureQuery("evtFechaRealPrueba");
-                 System.out.println("TEST "+test.getIdPruebas()+" tipo "+test.getTipoPrueba().getTesttype());
+                System.out.println("TEST " + test.getIdPruebas() + " tipo " + test.getTipoPrueba().getTesttype());
                 stQ.registerStoredProcedureParameter(1, Integer.class, ParameterMode.IN);
                 stQ.registerStoredProcedureParameter(2, Integer.class, ParameterMode.IN);
                 stQ.setParameter(1, test.getIdPruebas());
                 stQ.setParameter(2, test.getTipoPrueba().getTesttype());
                 stQ.executeUpdate();
                 em.flush();
-                
+
             }
             //************************************************************
             test.setFechaaborto(ipEquipo.concat(";").concat(String.valueOf(idAud)));
             em.merge(test);
-            em.getTransaction().commit();           
+            em.getTransaction().commit();
 //            if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
 //            {
 //                ClienteSicov clienteIndra = new ClienteSicov();
@@ -489,10 +483,9 @@ public class Frm_Placas extends javax.swing.JDialog
             System.out.println("id (Audi) apartado con exito");
         }
     }
-    
 
     /**
-     * 
+     *
      * @param tramaAuditoria
      * @param evento
      * @param operacion
@@ -500,7 +493,7 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param escrTrans
      * @param serialEquipo
-     * @param usuario 
+     * @param usuario
      */
     private void regTblAuditoriaSicov(String tramaAuditoria, Integer evento, Integer operacion, Integer indPrueba, int revTec, String escrTrans, String serialEquipo, Usuarios usuario) {
         System.out.println("ENTRO LECTURA SICOV SART 1.7.3 x 9");
@@ -571,12 +564,10 @@ public class Frm_Placas extends javax.swing.JDialog
                     em.merge(test);
                 } else {
                     System.out.println("TRANSICION ES " + escrTrans);
-                    if (tramaAuditoria == null)
-                    {
+                    if (tramaAuditoria == null) {
                         String infLabr = "";
                         String cmLabr = "";
-                        if (test.getTipoPrueba().getTesttype() == 1) 
-                        {
+                        if (test.getTipoPrueba().getTesttype() == 1) {
                             int posObs = test.getObservaciones().indexOf("obs");
                             String observaciones = "";
                             String tramaDefectos = "";
@@ -604,8 +595,7 @@ public class Frm_Placas extends javax.swing.JDialog
                             auditoriaSicov.setObservacion(observaciones);
                         }
                     } else {
-                        if (test.getTipoPrueba().getTesttype() == 8) 
-                        {
+                        if (test.getTipoPrueba().getTesttype() == 8) {
                             System.out.println("VALID PRUEBA GASES");
                             if (tramaAuditoria.equalsIgnoreCase("aplicoSensorial")) {
                                 tramaAuditoria = "{\"tempRalenti\":\"".concat(String.valueOf(" ")).concat("\",").concat("\"tempCrucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"rpmRalenti\":\"").concat("\",").concat("\"rpmCrucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"CORalenti\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"COCrucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"CO2Ralenti\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"CO2Crucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"O2Ralenti\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"O2Crucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"HCRalenti\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"HCCrucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"NORalenti\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"NOCrucero\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"tempDiesel\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"rpmDiesel\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"ciclo1\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"ciclo2\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"ciclo3\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"ciclo4\":\"").concat(String.valueOf(" ")).concat("\",").concat("\"resultadoValor\":\"").concat(String.valueOf(" ")).concat("\",");
@@ -668,7 +658,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 em.getTransaction().commit();
             } catch (Exception ex) {
                 System.out.println("ocurrio una exception al momento de reg tbl audi razon " + ex.getMessage());
-                regIdAuditoria(indPrueba, revTec, false,null,null);
+                regIdAuditoria(indPrueba, revTec, false, null, null);
             }
             em.getTransaction().begin();
             em.flush();
@@ -677,17 +667,15 @@ public class Frm_Placas extends javax.swing.JDialog
 
         }
     }
-    
-    
-    private void btn_verificarActionPerformed(java.awt.event.ActionEvent evt)
-    {                                              
+
+    private void btn_verificarActionPerformed(java.awt.event.ActionEvent evt) {
         Frame frame = (Frame) SwingUtilities.getWindowAncestor(this);
 //        ControladorVerificar controladorVerificar = new ControladorVerificar();
         //Guardar las placas de un vehículo para la posterior fescritura en la base de datos.
         nrei = new NoReiniciable();
         placas = cam_placas.getText();//las placas del carro
         nrei.establecerPlacasBd(placas);//????
-        
+
         //Captura de las placas del vehículo, nombre de usuario y contraseña...
         //placas = cam_placas.getText();
         nombre_usuario = cam_usuario.getText();//nombre de usuario y contraseña
@@ -695,59 +683,52 @@ public class Frm_Placas extends javax.swing.JDialog
         pass = new String(p);//pasword
 
         //Traer la informacion del usuario
-        
         System.out.println(" voy a buscar usuario ");
         Usuarios usuarioJPA = controladorVerificar.getUsuarioByNick(nombre_usuario, em);
         usr = usuarioJPA;
         em.getTransaction().begin();
         em.flush();
         em.getTransaction().commit();
-        System.out.println(" pase de fusionamiento del contexto de persistencia ");        
+        System.out.println(" pase de fusionamiento del contexto de persistencia ");
         int idHojaPruebaLocal = controladorVerificar.hojaPruebaMaxNoFin(placas, em);
-        
+
         int aplicTrans = controladorVerificar.aplicTransito(idHojaPruebaLocal, em);
         System.out.println(" capturo hoja y demas logica ");
-        if (idHojaPruebaLocal < 0 ) {
+        if (idHojaPruebaLocal < 0) {
             JOptionPane.showMessageDialog(null, "Disculpe, este Vehiculo NO POSEE una hoja de prueba Autorizada .....");
             cam_contraseña.setText("");
             return;
         }
         final int revTec = controladorVerificar.esRevTecn(idHojaPruebaLocal, em);
-        if ( revTec == -1) {
-              JOptionPane.showMessageDialog(null, "Disculpe, NO PUEDO CONTINUAR con la Prueba (FaltaInicioPin).");
-               return;
+        if (revTec == -1) {
+            JOptionPane.showMessageDialog(null, "Disculpe, NO PUEDO CONTINUAR con la Prueba (FaltaInicioPin).");
+            return;
         }
         Vehiculos tipo = controladorVerificar.getTipoVehiculo(placas, em);
-        
+
         System.out.println(" c1");
-        try 
-        {
+        try {
             config = new BufferedReader(new FileReader(new File("configuracion.txt")));
             String line;
             System.out.println("entro a validar el tipo de pista a la que entro");
-            while (!config.readLine().startsWith("[TIPOPISTA]")) 
-            {
+            while (!config.readLine().startsWith("[TIPOPISTA]")) {
             }
             if ((line = config.readLine()).startsWith("valida_tipo:"));
-               valida_tipo = Integer.parseInt(line.substring(line.indexOf(" ") + 1, line.length()));            
-               
-             if ((line = config.readLine()).startsWith("tipo_pista:"));
-               tipoPista = line.substring(line.indexOf(" ") + 1, line.length());
+            valida_tipo = Integer.parseInt(line.substring(line.indexOf(" ") + 1, line.length()));
 
-        } catch (FileNotFoundException ex) 
-        {
+            if ((line = config.readLine()).startsWith("tipo_pista:"));
+            tipoPista = line.substring(line.indexOf(" ") + 1, line.length());
+
+        } catch (FileNotFoundException ex) {
             Logger.getLogger(this.getClass().getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) 
-        {
-            
+        } catch (IOException ex) {
+
         }
 
         int tipo1 = tipo.getTipoVehiculo().getCartype();
-        System.out.println(" el tipo is "+tipo1);
-        if (valida_tipo == 1) 
-        {
-            if (tipo1 != 4 && tipo1 != 5) 
-            {
+        System.out.println(" el tipo is " + tipo1);
+        if (valida_tipo == 1) {
+            if (tipo1 != 4 && tipo1 != 5) {
                 JOptionPane.showMessageDialog(null, "DISCULPE; EL VEHICULO NO ES UNA MOTO");
                 return;
             }
@@ -758,128 +739,109 @@ public class Frm_Placas extends javax.swing.JDialog
                 return;
             }
         }
-        if (tipoPista.equalsIgnoreCase("Mixta")) 
-        {
-            if (tipo1 == 5 && tipo1 == 4) 
-            {
+        if (tipoPista.equalsIgnoreCase("Mixta")) {
+            if (tipo1 == 5 && tipo1 == 4) {
                 JOptionPane.showMessageDialog(null, "DISCULPE; EL VEHICULO NO ES UN CARRO Mixta");
                 return;
             }
         }
-        if (usuarioJPA == null) 
-        {
+        if (usuarioJPA == null) {
             JOptionPane.showMessageDialog(null, "DISCULPE; El Usuario no esta registrado en Repositorio de Datos");
             doClose(0);
             return;
         }
-        if (usuarioJPA.getNickusuario().startsWith(".DT")==true) 
-        {
+        if (usuarioJPA.getNickusuario().startsWith(".DT") == true) {
             JOptionPane.showMessageDialog(null, "DISCULPE; Los Directores Tecnicos no estan Autorizados para Efectuar Pruebas ");
             doClose(0);
-            return; 
+            return;
         }
-        if (!usuarioJPA.getContrasenia().equals(pass))
-        {
+        if (!usuarioJPA.getContrasenia().equals(pass)) {
             JOptionPane.showMessageDialog(null, "DISCULPE; la Contraseña DIGITADA es incorrecta");
             cam_contraseña.setText("");
             return;
         }
         System.out.println(" c3");
         ipEquipo = UtilSicov.BusqIpAplPrueba();
-                
-        idUsuario = usuarioJPA.getGeuser();        
+
+        idUsuario = usuarioJPA.getGeuser();
         Cda cda = new Cda();
-        try {            
+        try {
             Object[] arrayObjetos = UtilInfoServicioGases.getAtributosCDA(em);
             cda.setProveedorSicov(arrayObjetos[0].toString());
-            cda.setUsuarioSicov(arrayObjetos[1].toString());            
-            cda.setPasswordSicov(arrayObjetos[2].toString());     
-            cda.setUrlServicioSicov(arrayObjetos[3].toString());            
-            cda.setUrlServicioEncript(arrayObjetos[4].toString());            
-            cda.setIdRunt(Integer.parseInt(arrayObjetos[5].toString()));          
+            cda.setUsuarioSicov(arrayObjetos[1].toString());
+            cda.setPasswordSicov(arrayObjetos[2].toString());
+            cda.setUrlServicioSicov(arrayObjetos[3].toString());
+            cda.setUrlServicioEncript(arrayObjetos[4].toString());
+            cda.setIdRunt(Integer.parseInt(arrayObjetos[5].toString()));
         } catch (SQLException ex) {
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
         }
         System.out.println("estoy en  c4");
-        EventoDTO eventoDTO=null;
-        if (cda.getProveedorSicov().equalsIgnoreCase("INDRA"))
-        {
+        EventoDTO eventoDTO = null;
+        if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
             eventoDTO = new EventoDTO();
             eventoDTO.setIdPrueba(idPrueba);
             eventoDTO.setPlaca(placas);
-            eventoDTO.setCodigoProveedor(cda.getUsuarioSicov());            
+            eventoDTO.setCodigoProveedor(cda.getUsuarioSicov());
             eventoDTO.setIdEvento(1);
             eventoDTO.setIdRunt(cda.getIdRunt().toString());
-        } 
+        }
         System.out.println("salgo de validar si es indra");
-        
+
         //Validar que exista una hoja de prueba para el vehiculo no finalizada
         // HojaPruebasJpaController hpjc = new HojaPruebasJpaController();
         //Que es mas eficiente traer todas las pruebas o buscar segun el boton
         //VehiculosJpaController vjc = new VehiculosJpaController();
-        
-       
-        if (nombreBoton.equals("Labrado")) 
-        {
-            pruebaLabrado(idHojaPruebaLocal,frame);
-        }  
-         
-        if (nombreBoton.equals("Inspeccion Sensorial")) 
-        {
-            pruebaInspeccionSensorial(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO);
-        }
-            
-        if (nombreBoton.equals("Desviacion")) 
-        {
-            pruebaDesviacion(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
-        }
-       
-        if (nombreBoton.equals("Foto")) 
-        {
-            pruebaFoto(idHojaPruebaLocal,usuarioJPA,frame);
+        if (nombreBoton.equals("Labrado")) {
+            pruebaLabrado(idHojaPruebaLocal, frame);
         }
 
-        if (nombreBoton.equals("Frenos"))
-        {
-            pruebaFrenos(idHojaPruebaLocal,usuarioJPA,frame,revTec,cda,eventoDTO,aplicTrans);
+        if (nombreBoton.equals("Inspeccion Sensorial")) {
+            pruebaInspeccionSensorial(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO);
         }
-        
-        if (nombreBoton.equals("Gases"))
-        {
+
+        if (nombreBoton.equals("Desviacion")) {
+            pruebaDesviacion(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
+        }
+
+        if (nombreBoton.equals("Foto")) {
+            pruebaFoto(idHojaPruebaLocal, usuarioJPA, frame);
+        }
+
+        if (nombreBoton.equals("Frenos")) {
+            pruebaFrenos(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
+        }
+
+        if (nombreBoton.equals("Gases")) {
             System.out.println("entra en la prueba de gases \n");
-            pruebaGases(idHojaPruebaLocal,usuarioJPA,tipo,frame,revTec,cda,eventoDTO,aplicTrans);
+            pruebaGases(idHojaPruebaLocal, usuarioJPA, tipo, frame, revTec, cda, eventoDTO, aplicTrans);
         }
-        
-        if (nombreBoton.equals("Luces"))
-        {
-            pruebaLuces( idHojaPruebaLocal, usuarioJPA, frame, revTec,  cda, eventoDTO, aplicTrans);
+
+        if (nombreBoton.equals("Luces")) {
+            pruebaLuces(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
         }
-        
-        if (nombreBoton.equals("Ruido")) 
-        {
-            pruebaRuido( idHojaPruebaLocal, usuarioJPA, frame, revTec,  cda, eventoDTO);
+
+        if (nombreBoton.equals("Ruido")) {
+            pruebaRuido(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO);
         }
         System.out.println("nombre del boton: " + nombreBoton);
-        if (nombreBoton.equals("Suspensión"))
-        {
+        if (nombreBoton.equals("Suspensión")) {
             System.out.println("entro a suspension");
-            pruebaSuspension( idHojaPruebaLocal, frame, revTec,  cda, eventoDTO, aplicTrans);
+            pruebaSuspension(idHojaPruebaLocal, frame, revTec, cda, eventoDTO, aplicTrans);
         }
-        
-        if (nombreBoton.equals("Taximetro"))
-        {
-            pruebaTaximetro(idHojaPruebaLocal, usuarioJPA, frame, revTec,  cda, eventoDTO, aplicTrans) ;
+
+        if (nombreBoton.equals("Taximetro")) {
+            pruebaTaximetro(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
         }
-        
-        if (nombreBoton.equals("Integracion")) 
-        {
+
+        if (nombreBoton.equals("Integracion")) {
             System.out.println("entro al boton de prueba de integracion ");
-            pruebaIntegracion( idHojaPruebaLocal,  usuarioJPA,  frame,  revTec,  cda,  eventoDTO,  aplicTrans);
+            pruebaIntegracion(idHojaPruebaLocal, usuarioJPA, frame, revTec, cda, eventoDTO, aplicTrans);
         }
         doClose(0);
-    }                                             
+    }
 
     /**
      * @autor ELKIN B
@@ -889,29 +851,26 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaIntegracion(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) 
-    {
+    private void pruebaIntegracion(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
 
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando pruebaIntegracion------------");
         System.out.println("-----------------------------------------------------");
-        String F="",A="",S="";
-        serialEquipo="";
-        
-        try 
-        {//lee los datos de configuracion.txT depediendo de que variable este en "si" toma el serial del equipo
+        String F = "", A = "", S = "";
+        serialEquipo = "";
+
+        try {//lee los datos de configuracion.txT depediendo de que variable este en "si" toma el serial del equipo
             F = UtilPropiedades.cargarPropiedad("frenos", "configuracion.txt");//LEE EL VALOR DE LA VARIABLE desviacion 
             A = UtilPropiedades.cargarPropiedad("desviacion", "configuracion.txt");//LEE EL VALOR DE LA VARIABLE suspension
             S = UtilPropiedades.cargarPropiedad("suspension", "configuracion.txt");//LEE EL VALOR DE LA VARIABLE frenos
-            System.out.println("se realizara la prueba de \n Frenos: " + F + "\nDesviaacion: "+ A + "\nSuspension: "+ S);
-            
+            System.out.println("se realizara la prueba de \n Frenos: " + F + "\nDesviaacion: " + A + "\nSuspension: " + S);
+
         } catch (Exception e) {
-          System.out.println(" error leyendo el archivo configuracion.txt");
-        }                
-        try 
-        {
+            System.out.println(" error leyendo el archivo configuracion.txt");
+        }
+        try {
             idPruebaFreno = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 5, em);//5 es prueba de Frenos
             idPruebaSuspension = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 6, em);//6 es prueba de Suspension
             idPruebaDesviacion = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 4, em);//4 es la prueba de Desviacion            
@@ -919,18 +878,18 @@ public class Frm_Placas extends javax.swing.JDialog
             //08 Noviembre wdistinguir entre dialogo de pesados de 4x4 y de livianos
             Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
             boolean ensenianza = v.getEsEnsenaza() > 0;
-            
+
             if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
 //                PruebaDefaultDAO.escrTrans = "";
-                
+
                 if (revTec == 1) {
                     if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
                         eventoDTO.setNombrePrueba("FAS");
-                            //envia los parametros para consultar el serial de los equipos dependiendo de la prueba 
-                            serialEquipo =(F.equals("si"))?serialEquipo.concat( UtilSicov.BusqSerialRegistrado("FRENO", valida_tipo).concat("_")):serialEquipo;
-                            serialEquipo =(A.equals("si"))?serialEquipo.concat( UtilSicov.BusqSerialRegistrado("DESVIACION", valida_tipo).concat("_")):serialEquipo;
-                            serialEquipo =(S.equals("si"))?serialEquipo.concat( UtilSicov.BusqSerialRegistrado("SUSPENSION", valida_tipo).concat("_")):serialEquipo;                                                
+                        //envia los parametros para consultar el serial de los equipos dependiendo de la prueba 
+                        serialEquipo = (F.equals("si")) ? serialEquipo.concat(UtilSicov.BusqSerialRegistrado("FRENO", valida_tipo).concat("_")) : serialEquipo;
+                        serialEquipo = (A.equals("si")) ? serialEquipo.concat(UtilSicov.BusqSerialRegistrado("DESVIACION", valida_tipo).concat("_")) : serialEquipo;
+                        serialEquipo = (S.equals("si")) ? serialEquipo.concat(UtilSicov.BusqSerialRegistrado("SUSPENSION", valida_tipo).concat("_")) : serialEquipo;
                         serialEquipo = StringUtils.removeEnd(serialEquipo, "_");//remuevo el _ que se encuentre al final de la trama
                         System.out.println("serial de prueba fas que voy a enviar :" + serialEquipo);
                         //serialEquipo = UtilSicov.BusqSerialRegistrado("TAXIMETRO",valida_tipo);
@@ -947,8 +906,8 @@ public class Frm_Placas extends javax.swing.JDialog
                         }
                     }
                 }
-                
-                DlgIntegradoLiviano dlgIntegracion = new DlgIntegradoLiviano(frame, idPruebaDesviacion, idPruebaSuspension, idPruebaFreno, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());
+
+                DlgIntegradoLiviano dlgIntegracion = new DlgIntegradoLiviano(frame, idPruebaDesviacion, idPruebaSuspension, idPruebaFreno, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
                 dlgIntegracion.setVisible(true);
                 //segun eso configurar apropiadamente el dialogo para que realice solo 
                 //las pruebas que deba
@@ -957,21 +916,21 @@ public class Frm_Placas extends javax.swing.JDialog
                     return;
                 }
 //                System.out.println("valor tomado en LIVIANO PRUEBAS INTEGRADAS  " + PruebaDefaultDAO.escrTrans);
-                if (idPruebaFreno > 0) {                    
+                if (idPruebaFreno > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Freno");
                     System.out.println("REGISTRO ESPERA CONFIRMACION TRANSACCION FRENOS ");
-                    regIdAuditoria(idPruebaFreno, revTec, true,eventoDTO,cda);                    
+                    regIdAuditoria(idPruebaFreno, revTec, true, eventoDTO, cda);
                 }
                 //Suspension
                 if (idPruebaSuspension > 0) {
                     System.out.println("REGISTRO ESPERA CONFIRMACION TRANSACCION SUSPENSION ");
-                    regIdAuditoria(idPruebaSuspension, revTec, true,eventoDTO,cda);                       
+                    regIdAuditoria(idPruebaSuspension, revTec, true, eventoDTO, cda);
                 }
                 //Desviacion
                 if (idPruebaDesviacion > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Desviacion");
                     System.out.println("REGISTRO ESPERA CONFIRMACION TRANSACCION DESVIACION ");
-                    regIdAuditoria(idPruebaDesviacion, revTec, true,eventoDTO,cda);                
+                    regIdAuditoria(idPruebaDesviacion, revTec, true, eventoDTO, cda);
                 }
                 //no iniciar el dialogo si no esta habilitada ni freno, ni desviacion, ni suspension
                 if (idPruebaFreno < 0 && idPruebaSuspension < 0 && idPruebaDesviacion < 0) {
@@ -982,7 +941,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 //Hace visible el dialogo               
             } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado")) {
 //                System.out.println("valor inicial  " + PruebaDefaultDAO.escrTrans);
-                DlgIntegradoPesado dlgIntegracion = new DlgIntegradoPesado(frame, idPruebaDesviacion, idPruebaFreno, idUsuario, idHojaPruebaLocal, v.getNumeroejes(), ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());//Es necesario configurar bien el constructor
+                DlgIntegradoPesado dlgIntegracion = new DlgIntegradoPesado(frame, idPruebaDesviacion, idPruebaFreno, idUsuario, idHojaPruebaLocal, v.getNumeroejes(), ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());//Es necesario configurar bien el constructor
                 //Hace visible el dialogo
                 dlgIntegracion.setNumeroejes(v.getNumeroejes());//no seteaba apropiadamente el numero de ejes.
                 dlgIntegracion.setVisible(true);
@@ -995,12 +954,12 @@ public class Frm_Placas extends javax.swing.JDialog
                 if (idPruebaFreno > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Freno");
 //                    System.out.println("ESCANEADO SEUDO SERVIDOR SART 1.7  FRENOS  " + PruebaDefaultDAO.escrTrans);
-                    regIdAuditoria(idPruebaFreno, revTec, true,eventoDTO,cda);           
+                    regIdAuditoria(idPruebaFreno, revTec, true, eventoDTO, cda);
                 }
                 //Desviacion
                 if (idPruebaDesviacion > 0) {
 //                    System.out.println("ESCANEADO SEUDO SERVIDOR SART 1.7  DESVIACION  " + PruebaDefaultDAO.escrTrans);
-                    regIdAuditoria(idPruebaDesviacion, revTec, true,eventoDTO,cda);                                     
+                    regIdAuditoria(idPruebaDesviacion, revTec, true, eventoDTO, cda);
                 }
                 //no iniciar el dialogo si no esta habilitada ni freno, ni desviacion
                 if (idPruebaFreno < 0 && idPruebaDesviacion < 0) {
@@ -1010,7 +969,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 }
             } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")) {
 //                PruebaDefaultDAO.escrTrans = "";
-                DlgIntegrado4x4 dlgIntegracion = new DlgIntegrado4x4(frame, idPruebaDesviacion, idPruebaSuspension, idPruebaFreno, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());//Es necesario configurar bien el constructor
+                DlgIntegrado4x4 dlgIntegracion = new DlgIntegrado4x4(frame, idPruebaDesviacion, idPruebaSuspension, idPruebaFreno, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());//Es necesario configurar bien el constructor
                 //segun eso configurar apropiadamente el dialogo para que realice solo 
                 //las pruebas que deba
                 dlgIntegracion.setNumeroejes(v.getNumeroejes());//no seteaba apropiadamente el numero de ejes.
@@ -1018,20 +977,19 @@ public class Frm_Placas extends javax.swing.JDialog
 //                System.out.println("valor tomado en este codigo  " + PruebaDefaultDAO.escrTrans);
                 if (idPruebaFreno > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Freno");
-                    regIdAuditoria(idPruebaFreno, revTec, true,eventoDTO,cda);
+                    regIdAuditoria(idPruebaFreno, revTec, true, eventoDTO, cda);
 
                 }
                 //Suspension
                 if (idPruebaSuspension > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Suspension");
-                    regIdAuditoria(idPruebaSuspension, revTec, true,eventoDTO,cda);
-                }    
+                    regIdAuditoria(idPruebaSuspension, revTec, true, eventoDTO, cda);
+                }
 
-                    
                 //Desviacion
                 if (idPruebaDesviacion > 0) {
                     registarPruebaLog(placas, usuarioJPA, "Desviacion");
-                    regIdAuditoria(idPruebaDesviacion, revTec, true,eventoDTO,cda);                   
+                    regIdAuditoria(idPruebaDesviacion, revTec, true, eventoDTO, cda);
                 }
                 //no iniciar el dialogo si no esta habilitada ni freno, ni desviacion, ni suspension
                 if (idPruebaFreno < 0 && idPruebaSuspension < 0 && idPruebaDesviacion < 0) {
@@ -1046,14 +1004,13 @@ public class Frm_Placas extends javax.swing.JDialog
             } else {
                 Mensajes.mensajeAdvertencia("Disculpe; Tipo de vehiculo invalido");
             }
- 
+
         } catch (Exception e) {
             System.out.println("Error en el metodo :pruebaIntegracion() " + e.getLocalizedMessage() + e.getMessage());
         }
 
         doClose(0);
     }
-
 
     /**
      * @autor ELKIN B
@@ -1063,10 +1020,9 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaTaximetro(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans) 
-    {
+    private void pruebaTaximetro(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         //humedad= encima de 30 relativa, temp ambiente 5-55
         System.out.println("----------------------------------------------------");
         System.out.println("--------------realizando pruebaTaximetro------------");
@@ -1086,10 +1042,8 @@ public class Frm_Placas extends javax.swing.JDialog
                 Vehiculos vehiculo = controladorVerificar.getTipoVehiculo(placas, em);
                 System.out.println("voy a entrar en constructor taximetro   ");
                 System.out.println("valor de aplicTrans    " + aplicTrans);
-                if (revTec == 1)
-                {
-                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA"))
-                    {
+                if (revTec == 1) {
+                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
                         eventoDTO.setNombrePrueba("Taximetro");
                         serialEquipo = UtilSicov.BusqSerialRegistrado("TAXIMETRO", valida_tipo);
@@ -1121,8 +1075,7 @@ public class Frm_Placas extends javax.swing.JDialog
                     }
                 }
 //                vehiculo.getTipoVehiculo().setNombre("Taxis_AplTaximetro");
-                if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro"))
-                {
+                if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro")) {
                     System.out.println("idPrueba : " + idPrueba + " idUsuario : " + idUsuario + " idHojaPruebaLocal : " + idHojaPruebaLocal + " Nombrellanta  vehiculo " + vehiculo.getLlantas().getNombrellanta() + " aplicTrans " + aplicTrans);
                     DlgTaximetro dlgTaximetro = new DlgTaximetro(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, vehiculo.getLlantas().getNombrellanta(), aplicTrans);
                     dlgTaximetro.setVisible(true);
@@ -1140,7 +1093,7 @@ public class Frm_Placas extends javax.swing.JDialog
         }
         doClose(0);
     }
-    
+
     /**
      * @autor ELKIN B
      * @param idHojaPruebaLocal
@@ -1148,19 +1101,17 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaSuspension(int idHojaPruebaLocal,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans)
-    {
+    private void pruebaSuspension(int idHojaPruebaLocal, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         System.out.println("----------------------------------------------------");
         System.out.println("--------------realizando Suspension-----------------");
         System.out.println("----------------------------------------------------");
-        try 
-        {
-                        idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 6, em);//6 es SUSPENSION
+        try {
+            idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 6, em);//6 es SUSPENSION
             if (idPrueba > 1) {
-                 controladorVerificar.clearContextoPrueba(idPrueba, em);
-             }
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
+            }
             if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
                 doClose(0);
@@ -1174,19 +1125,19 @@ public class Frm_Placas extends javax.swing.JDialog
                     if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
                         eventoDTO.setNombrePrueba("FAS");
-                        serialEquipo = UtilSicov.BusqSerialRegistrado("SUSPENSION",valida_tipo);
+                        serialEquipo = UtilSicov.BusqSerialRegistrado("SUSPENSION", valida_tipo);
                         if (serialEquipo.equals("0")) {
-                             Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba())); 
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas SUSPENSION,debido a: (Serial Equipo NO ENCONTRADO)");
                             doClose(0);
                             return;
-                        }                      
+                        }
                         String fecha = UtilSicov.askDate();
                         fecha = fecha.substring(0, fecha.length() - 2);
                         eventoDTO.setSerialEquipo(serialEquipo);
                         eventoDTO.setFecha(fecha);
                         RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
-                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));                        
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
                         Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
                         if (respuesta.getCodigoRespuesta().equals("0")) {
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas FAS");
@@ -1195,30 +1146,29 @@ public class Frm_Placas extends javax.swing.JDialog
                         }
                     }
                 }
-                switch (v.getTipoVehiculo().getNombre())
-                {
+                switch (v.getTipoVehiculo().getNombre()) {
                     case "Liviano":
-                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText()).setVisible(true);
+                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText()).setVisible(true);
                         System.out.println("VOY A REGISTAR TIMER DE TRANSACCION (LIVIANO) SUSPENSION ");
-                        regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);                      
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                         break;
                     case "Taxis_AplTaximetro":
-                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText()).setVisible(true);
-                     
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
-                     
+                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText()).setVisible(true);
+
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
                         break;
                     case "Taxis":
-                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText()).setVisible(true);
-                                                    
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
-                     
+                        new DlgIntegradoLiviano(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText()).setVisible(true);
+
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
                         break;
                     case "4x4":
-                        new DlgIntegrado4x4(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText()).setVisible(true);
-                  
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
-                       
+                        new DlgIntegrado4x4(frame, 0, idPrueba, 0, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText()).setVisible(true);
+
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
                         break;
                 }
             }//end else vehiculo autorizada prueba
@@ -1228,9 +1178,7 @@ public class Frm_Placas extends javax.swing.JDialog
         }
         doClose(0);
     }
-    
 
-    
     /**
      * @autor ELKIN B
      * @param idHojaPruebaLocal
@@ -1239,19 +1187,17 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaRuido(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO)
-    {
+    private void pruebaRuido(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO) {
         System.out.println("----------------------------------------------------");
         System.out.println("--------------realizando pruebaRuido----------------");
         System.out.println("----------------------------------------------------");
-        try 
-        {
+        try {
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 7, em);//7 es el sonometro
             if (idPrueba > 1) {
-                 controladorVerificar.clearContextoPrueba(idPrueba, em);
-             }
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
+            }
             if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
                 doClose(0);
@@ -1261,13 +1207,10 @@ public class Frm_Placas extends javax.swing.JDialog
                     //El vehiculo tiene autorizada la prueba
                     registarPruebaLog(placas, usuarioJPA, "Ruido");
                     Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
-                    if (revTec == 1) 
-                    {
-                        if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
-                        {
-                            serialEquipo = UtilSicov.BusqSerialRegistrado("RUIDO",valida_tipo);
-                            if (serialEquipo.equals("0")) 
-                            {
+                    if (revTec == 1) {
+                        if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
+                            serialEquipo = UtilSicov.BusqSerialRegistrado("RUIDO", valida_tipo);
+                            if (serialEquipo.equals("0")) {
 //                                Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba())); 
                                 JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas RUIDO,debido a: (Serial Equipo NO ENCONTRADO)");
                                 doClose(0);
@@ -1286,42 +1229,38 @@ public class Frm_Placas extends javax.swing.JDialog
                     }
                     System.out.println("VOy a reg idAuditoria, el id prueba es " + idPrueba);
                     boolean fall = false;
-                    regIdAuditoriaRuido(idPrueba, revTec, true,cda);
+                    regIdAuditoriaRuido(idPrueba, revTec, true, cda);
                 } catch (Exception ex) {
                     Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
-            
+
         } catch (Exception e) {
             System.out.println("Error en el metodo :pruebaRuido() " + e.getLocalizedMessage() + e.getMessage());
         }
-        
+
         doClose(0);
-    } 
-    
-    
-    
-       /**
-        * @autor ELKIN B
-        * @param idHojaPruebaLocal
-        * @param usuarioJPA
-        * @param frame
-        * @param revTec
-        * @param cda
-        * @param eventoDTO
-        * @param aplicTrans 
-        */
-    private void pruebaLuces(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans)
-    {
+    }
+
+    /**
+     * @autor ELKIN B
+     * @param idHojaPruebaLocal
+     * @param usuarioJPA
+     * @param frame
+     * @param revTec
+     * @param cda
+     * @param eventoDTO
+     * @param aplicTrans
+     */
+    private void pruebaLuces(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando pruebaLuces-----------------");
         System.out.println("-----------------------------------------------------");
-        try 
-        {
+        try {
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 2, em);//cambiar por constante
             if (idPrueba > 1) {
-                 controladorVerificar.clearContextoPrueba(idPrueba, em);
-             }
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
+            }
             if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "Este vehiculo no tiene ASIGNADA una Revision Tecnomecanica");
                 doClose(0);
@@ -1330,30 +1269,28 @@ public class Frm_Placas extends javax.swing.JDialog
                 registarPruebaLog(placas, usuarioJPA, "Luces");
                 Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
                 Properties properties = new Properties();
-                String versionLuxometro="";
+                String versionLuxometro = "";
                 try {
                     properties.load(new FileInputStream(new File("./propiedades.properties")));
-                    versionLuxometro=properties.getProperty("VersionLuxometro");                    
+                    versionLuxometro = properties.getProperty("VersionLuxometro");
                 } catch (FileNotFoundException ex) {
                     Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (IOException ex) {
                     Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                
-               //Propiedades.VersionLuxometro versionLuxometro = Propiedades.getInstance().getVersionLuxometro();
-                String tipoLux = versionLuxometro;   
+
+                //Propiedades.VersionLuxometro versionLuxometro = Propiedades.getInstance().getVersionLuxometro();
+                String tipoLux = versionLuxometro;
                 System.out.println("-------------------------------------------");
-                System.out.println("------------------tipoLux-- : " +tipoLux);
+                System.out.println("------------------tipoLux-- : " + tipoLux);
                 System.out.println("-------------------------------------------");
-                  
+
 //                System.out.println("valor inicial  " + PruebaDefaultDAO.escrTrans);
-                  
                 if (revTec == 1) {
-                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA"))
-                    {
+                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
 //                        ClienteSicov clienteIndra = new ClienteSicov();
                         eventoDTO.setNombrePrueba("Luces");///
-                        serialEquipo = UtilSicov.BusqSerialRegistrado("LUCES",valida_tipo);
+                        serialEquipo = UtilSicov.BusqSerialRegistrado("LUCES", valida_tipo);
                         if (serialEquipo.equals("0")) {
                             Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas LUCES,debido a: (Serial Equipo NO ENCONTRADO)");
@@ -1367,8 +1304,8 @@ public class Frm_Placas extends javax.swing.JDialog
                         eventoDTO.setMensajeEvento("");
 //                        eventoDTO.setFecha(fecha);
 //                        RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
-                       Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial -- : ".concat(serialEquipo));
-                       Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha -- : ".concat(eventoDTO.getFecha()));
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial -- : ".concat(serialEquipo));
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha -- : ".concat(eventoDTO.getFecha()));
 //                        if (respuesta.getCodigoRespuesta().equals("0")) {
 //                            JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas Luces");
 //                            doClose(0);
@@ -1377,7 +1314,7 @@ public class Frm_Placas extends javax.swing.JDialog
                     }
                 }
                 if (null != versionLuxometro) {
-                   
+
                     if (versionLuxometro.equalsIgnoreCase("LUJAN")) {
                         if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {//Si es una moto entonces hacer prueba de moto
                             Long indPrueba = Long.parseLong((String.valueOf(idPrueba)));
@@ -1395,8 +1332,7 @@ public class Frm_Placas extends javax.swing.JDialog
                         }
                     }
 
-                    if (versionLuxometro.equalsIgnoreCase("SERIAL")) 
-                    {
+                    if (versionLuxometro.equalsIgnoreCase("SERIAL")) {
                         if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {//Si es una moto entonces hacer prueba de moto
                             Long indPrueba = Long.parseLong((String.valueOf(idPrueba)));
                             JDialogLucesMoto jDialogLucesMoto = new JDialogLucesMoto(frame, true, indPrueba, idHojaPruebaLocal, idUsuario, aplicTrans, tipoLux);
@@ -1415,8 +1351,7 @@ public class Frm_Placas extends javax.swing.JDialog
                             doClose(0);
                         }
                     }
-                    if (versionLuxometro.equalsIgnoreCase("GEMINI")) 
-                    {
+                    if (versionLuxometro.equalsIgnoreCase("GEMINI")) {
                         JDialogGemini jDialogGemini = new JDialogGemini(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, placas);
                         regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                         doClose(0);
@@ -1425,19 +1360,17 @@ public class Frm_Placas extends javax.swing.JDialog
                         new JDialogLuxometroChino(frame, true, idPrueba, idUsuario).setVisible(true);
                         doClose(0);
                     }
-                    if (versionLuxometro.equalsIgnoreCase("MOON")) 
-                        
-                    {                        
+                    if (versionLuxometro.equalsIgnoreCase("MOON")) {
                         LecturaArchivoLuxometroMoon archivoLuxometroMoon = new LecturaArchivoLuxometroMoon(aplicTrans);
 //                        LecturaArchivoLuxomMoonPru archivLuxo= new LecturaArchivoLuxomMoonPru();
-                        int tipoVehiculo=0;
-                        if(v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")){
-                            tipoVehiculo=1;
-                        } else{
-                            tipoVehiculo=2;
+                        int tipoVehiculo = 0;
+                        if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")) {
+                            tipoVehiculo = 1;
+                        } else {
+                            tipoVehiculo = 2;
                         }
-                            
-                        archivoLuxometroMoon.iniciarTomaMedidaLuxometro(placas, idHojaPruebaLocal, idPrueba, idUsuario,tipoVehiculo);
+
+                        archivoLuxometroMoon.iniciarTomaMedidaLuxometro(placas, idHojaPruebaLocal, idPrueba, idUsuario, tipoVehiculo);
 //                        archivLuxo.iniciarTomaMedidaLuxometro(placas, idHojaPruebaLocal, idPrueba, idUsuario,tipoVehiculo);
                         regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                         try {
@@ -1447,42 +1380,38 @@ public class Frm_Placas extends javax.swing.JDialog
                         //   regTblAuditoriaSicov(LecturaArchivoLuxometroMoon.tramaAuditoria, 2, 1, idPrueba, revTec, "E", " ", usr);
                         LecturaArchivoLuxometroMoon.tramaAuditoria = "";
                     }
-                       if (versionLuxometro.equalsIgnoreCase("CAPELEC")) {
+                    if (versionLuxometro.equalsIgnoreCase("CAPELEC")) {
                         if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {//Si es una moto entonces hacer prueba de moto
                             JDialogLucesMotoCapelec jDialogLucesMoto = new JDialogLucesMotoCapelec(frame, true, idPrueba, idHojaPruebaLocal, idUsuario);
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
+                            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                             doClose(0);
                         } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
                             System.out.println("estoy entrando a Jdialogo paraa implementar pruebas de luces como CAPELEC");
                             JDialogLucesCarros jDialogLuces = new JDialogLucesCarros(frame, true, idPrueba, idUsuario, idHojaPruebaLocal);
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
+                            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                             doClose(0);
                         }
-                    }       
+                    }
                 }
             }
-            
+
         } catch (Exception e) {
             System.out.println("Error en el metodo :pruebaLuces() " + e.getLocalizedMessage() + e.getMessage());
         }
         doClose(0);
     }
 
-
-    
-    
     /**
      * @autor ELKIN B
-     * 
+     *
      * @param idHojaPruebaLocal
-     * @param frame 
+     * @param frame
      */
-    private void pruebaLabrado(int idHojaPruebaLocal,Frame frame) 
-    {
+    private void pruebaLabrado(int idHojaPruebaLocal, Frame frame) {
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando Labrado----------------------");
         System.out.println("-----------------------------------------------------");
-        
+
         try {
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 1, em);
             if (idPrueba > 1) {
@@ -1498,7 +1427,7 @@ public class Frm_Placas extends javax.swing.JDialog
                 LabradoPresionMoto frm = new LabradoPresionMoto(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario, vehiculo, em);
                 doClose(0);
                 frm.setVisible(true);
-                
+
             }
             if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
                 LabradoPresionLiviano frm = new LabradoPresionLiviano(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario, vehiculo, em);
@@ -1515,33 +1444,29 @@ public class Frm_Placas extends javax.swing.JDialog
         }
     }
 
-    
-    
     /**
      * @autor ELKIN B
-     * 
+     *
      * @param idHojaPruebaLocal
      * @param usuarioJPA
      * @param frame
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaFrenos(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans) 
-    {
+    private void pruebaFrenos(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando frenos-----------------------");
         System.out.println("-----------------------------------------------------");
-         //CAMBIO FRENO DE ENSEÑANZA
-               // boolean ensenianza = false;
-        try 
-        {
+        //CAMBIO FRENO DE ENSEÑANZA
+        // boolean ensenianza = false;
+        try {
             System.out.println(" hola c4");
-            int idPruebaV = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal,1,em);
+            int idPruebaV = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 1, em);
             System.out.println("pase el c4");
             try {
-                if(controladorVerificar.getPruebaNoFinalizadaTipo(idPruebaV, 1, em)<0){
+                if (controladorVerificar.getPruebaNoFinalizadaTipo(idPruebaV, 1, em) < 0) {
                     JOptionPane.showMessageDialog(null, "La inspeccion visual no ha sido terminada");
                     doClose(0);
                     return;
@@ -1553,11 +1478,11 @@ public class Frm_Placas extends javax.swing.JDialog
                 //for (Defxprueba defxprueba : idPruebaV.getDefxpruebaList())
             } catch (Exception ex) {
                 Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
-            }            
+            }
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 5, em);//cambiar por constante
             if (idPrueba > 1) {
-                 controladorVerificar.clearContextoPrueba(idPrueba, em);
-             }
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
+            }
             if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
                 doClose(0);
@@ -1568,27 +1493,27 @@ public class Frm_Placas extends javax.swing.JDialog
 //                System.out.println("valor inicial  " + PruebaDefaultDAO.escrTrans);
                 Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
                 boolean ensenianza = v.getEsEnsenaza() > 0;
-              //CAMBIO FRENO DE ENSEÑANZA
+                //CAMBIO FRENO DE ENSEÑANZA
                 System.out.println(" c5");
                 if (revTec == 1) {
                     if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
                         eventoDTO.setNombrePrueba("FAS");
-                        serialEquipo = UtilSicov.BusqSerialRegistrado("FRENO",valida_tipo);
+                        serialEquipo = UtilSicov.BusqSerialRegistrado("FRENO", valida_tipo);
                         if (serialEquipo.equals("0")) {
-                             Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba())); 
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas FRENOS,debido a: (Serial Equipo NO ENCONTRADO)");
                             doClose(0);
                             return;
                         }
-                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo)); 
-                        String fecha=UtilSicov.askDate();
-                        fecha=fecha.substring(0, fecha.length()-2);
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
+                        String fecha = UtilSicov.askDate();
+                        fecha = fecha.substring(0, fecha.length() - 2);
                         eventoDTO.setSerialEquipo(serialEquipo);
                         eventoDTO.setFecha(fecha);
                         RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
-                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));                       
-                                            
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
+
                         Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
                         if (respuesta.getCodigoRespuesta().equals("0")) {
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas FAS");
@@ -1606,77 +1531,75 @@ public class Frm_Placas extends javax.swing.JDialog
                         properties.load(new FileInputStream(new File("./propiedades.properties")));
                         plancha = Boolean.parseBoolean(properties.getProperty("plancha"));
                         version = properties.getProperty("planchaVersion", "v1");
-                
+
                     } catch (Exception e) {
                         System.out.println("No se encontro la propiedad plancha " + e);
                     }
                     if (plancha) {
                         if (version.equals("v1")) {
-                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "entre frenos  dialogfrenmotos".concat(eventoDTO.getPlaca())); 
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "entre frenos  dialogfrenmotos".concat(eventoDTO.getPlaca()));
                             dialogfrenmotos d = new dialogfrenmotos(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo);
                             d.setVisible(true);
                             doClose(0);
-                            regIdAuditoria(idPrueba, revTec, true, eventoDTO,cda);
+                            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                         } else {
-                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "entre frenos  dialogfrenmotos2".concat(eventoDTO.getPlaca())); 
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "entre frenos  dialogfrenmotos2".concat(eventoDTO.getPlaca()));
                             dialogfrenmotos2 d = new dialogfrenmotos2(frame, true, idPrueba, idUsuario, idHojaPruebaLocal);
-                            d.setVisible(true);   
+                            d.setVisible(true);
                             doClose(0);
-                            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);                           
+                            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                         }
-                    } else {                        
-                        DlgFrenoMoto dfm = new DlgFrenoMoto(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo,v.getCarplate(),cam_usuario.getText());
-                        dfm.setVisible(true); 
+                    } else {
+                        DlgFrenoMoto dfm = new DlgFrenoMoto(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, v.getCarplate(), cam_usuario.getText());
+                        dfm.setVisible(true);
                         doClose(0);
-                        regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);                
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                     }
                 } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
                     System.out.println(" c7");
-                    DlgIntegradoLiviano dlgFrenLivianos = new DlgIntegradoLiviano(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());
+                    DlgIntegradoLiviano dlgFrenLivianos = new DlgIntegradoLiviano(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
                     dlgFrenLivianos.setVisible(true);
                     doClose(0);
                     System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
-                    System.out.println(" c8");   
-                    regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
-               
+                    System.out.println(" c8");
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
                 }//end else de liviano y pesado
                 else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado")) {
-                    DlgIntegradoPesado dlgFrenPesados = new DlgIntegradoPesado(frame, 0, idPrueba, idUsuario, idHojaPruebaLocal, v.getNumeroejes(), ensenianza, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());
+                    DlgIntegradoPesado dlgFrenPesados = new DlgIntegradoPesado(frame, 0, idPrueba, idUsuario, idHojaPruebaLocal, v.getNumeroejes(), ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
                     dlgFrenPesados.setNumeroejes(v.getNumeroejes());
                     dlgFrenPesados.setVisible(true);
                     doClose(0);
                     System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
-                    regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);      
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
 
                 } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")) {
-                    DlgIntegrado4x4 dlgFren4x4 = new DlgIntegrado4x4(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo,v.getTipoVehiculo().getNombre(),v.getCarplate(),cam_usuario.getText());
+                    DlgIntegrado4x4 dlgFren4x4 = new DlgIntegrado4x4(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
                     dlgFren4x4.setVisible(true);
                     doClose(0);
                     System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
-                    regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);              
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                 } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {
                     Mensajes.mensajeAdvertencia("No se encuentra modulo para motocarro");
                 } else {
                     Mensajes.mensajeAdvertencia("Tipo de vehiculo invalido revise los datos");
                 }
             }//end else de prueba encontrada
-            
+
         } catch (Exception e) {
-            System.out.println("Error en el metodo pruebaFrenos(): " +e);
+            System.out.println("Error en el metodo pruebaFrenos(): " + e);
         }
-        
+
         doClose(0);
     }
-    
-    
+
     /**
      * @autor ELKIN B
      * @param idHojaPruebaLocal
      * @param usuarioJPA
-     * @param frame 
+     * @param frame
      */
-    private void pruebaFoto(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame) 
-    {
+    private void pruebaFoto(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame) {
 
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando pruebaFoto-----------------");
@@ -1702,12 +1625,10 @@ public class Frm_Placas extends javax.swing.JDialog
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "Error en Foto");
             System.out.println("Error en el metodo : pruebaFoto()" + e.getLocalizedMessage() + e.getMessage());
         }
-        
+
         doClose(0);
     }
 
-
-    
     /**
      * @autor ELKIN B
      * @param idHojaPruebaLocal
@@ -1715,22 +1636,18 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param frame
      * @param revTec
      * @param cda
-     * @param eventoDTO 
+     * @param eventoDTO
      */
-    private void pruebaInspeccionSensorial(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO)
-    {
+    private void pruebaInspeccionSensorial(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO) {
         System.out.println("-------------------------------------------------------------------");
         System.out.println("--------------realizando pruebaInspeccionSensorial-----------------");
         System.out.println("--------------------------------------------------------------------");
-        try 
-        {
+        try {
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 1, em);//cuatro es desviacion
-            if (idPrueba > 1) 
-            {
-                 controladorVerificar.clearContextoPrueba(idPrueba, em);
+            if (idPrueba > 1) {
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
             }
-            if (idPrueba < 0)
-            {
+            if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "DISCULPE; Este vehiculo no tiene autorizada la prueba");
                 doClose(0);
                 return;
@@ -1740,32 +1657,30 @@ public class Frm_Placas extends javax.swing.JDialog
                 idVehiculoInt = vehiculo.getCar();
                 boolean ensenianza = vehiculo.getEsEnsenaza() > 0;
                 if (revTec == 1) {
-                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
-                    {
+                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
-                        eventoDTO.setNombrePrueba("Visual");                        
+                        eventoDTO.setNombrePrueba("Visual");
                         eventoDTO.setIdEvento(1);
-                        
-                      serialEquipo = UtilSicov.BusqSerialRegistrado("PROFUNDIMETRO",valida_tipo);
+
+                        serialEquipo = UtilSicov.BusqSerialRegistrado("PROFUNDIMETRO", valida_tipo);
 //                        serialEquipo = UtilSicov.BusqSerialRegistrado("PROFUNDIMETRO",1);
-                        
+
                         System.out.println("------------------------------------");
                         System.out.println("---Serial para la prueba de VISUAL: " + serialEquipo);
                         System.out.println("------------------------------------");
-                        
-                        
+
                         if (serialEquipo.equals("0")) {
-                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba())); 
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
                             JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas Visual,debido a: (Serial Equipo NO ENCONTRADO)");
                             doClose(0);
                             return;
                         }
-                        String fecha=UtilSicov.askDate();
-                        fecha=fecha.substring(0, fecha.length()-2);
+                        String fecha = UtilSicov.askDate();
+                        fecha = fecha.substring(0, fecha.length() - 2);
                         eventoDTO.setFecha(fecha);
-                        eventoDTO.setSerialEquipo(serialEquipo); 
-                        
-                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));                                      
+                        eventoDTO.setSerialEquipo(serialEquipo);
+
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
                         Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
                         RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
                         if (respuesta.getCodigoRespuesta().equals("0")) {
@@ -1775,11 +1690,9 @@ public class Frm_Placas extends javax.swing.JDialog
                         }
                     }
                 }
-                if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto"))
-                {
+                if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")) {
                     Frm_mo_SFrenosv2 validarMedidasLabrado = new Frm_mo_SFrenosv2();
-                    if (validarMedidasLabrado.cargarMedidasLabradoDB(idPrueba).size() > 0) 
-                    {
+                    if (validarMedidasLabrado.cargarMedidasLabradoDB(idPrueba).size() > 0) {
                         registarPruebaLog(placas, usuarioJPA, "Inspeccion Sensorial");
                         Frm_mo_IVisualv2 frm = new Frm_mo_IVisualv2(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario, ensenianza, aplicTaximetro, em);
                         frm.setTitle("Inspección Sensorial para Motocicletas");
@@ -1789,47 +1702,40 @@ public class Frm_Placas extends javax.swing.JDialog
                         MensajesOut.messageWarningTime("La prueba NO tiene medidas de labrado", 5);
                         return;
                     }
-             
-                } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) 
-                {
+
+                } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
                     Frm_Motorv2 Ventanavisual = new Frm_Motorv2();
-                    if (Ventanavisual.cargarMedidasLabradoDB(idPrueba).size() > 0) 
-                    {
+                    if (Ventanavisual.cargarMedidasLabradoDB(idPrueba).size() > 0) {
                         registarPruebaLog(placas, usuarioJPA, "Inspeccion Sensorial");
                         Frm_InspeccionVisual frm = new Frm_InspeccionVisual(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario, ensenianza, aplicTaximetro, vehiculo, em);
                         frm.setTitle("Inspección Sensorial para Vehículos Livianos y Pesados");
                         doClose(0);
                         frm.setVisible(true);
-                    } else 
-                    {
+                    } else {
                         MensajesOut.messageWarningTime("La prueba NO tiene medidas de labrado", 5);
                         return;
                     }
-                    
+
                 } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {
                     registarPruebaLog(placas, usuarioJPA, "Inspeccion Sensorial");
-                    Frm_moca_IVisualv2 dlg = new Frm_moca_IVisualv2(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario,em);
+                    Frm_moca_IVisualv2 dlg = new Frm_moca_IVisualv2(frame, true, idVehiculoInt, idHojaPruebaLocal, idPrueba, idUsuario, em);
                     dlg.setTitle("Inspección Sensorial para Motocarros");
                     doClose(0);
-                    dlg.setVisible(true);                   
+                    dlg.setVisible(true);
                 } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Remolques")) {
                     registarPruebaLog(placas, usuarioJPA, "Inspeccion Sensorial");
                     Frm_re_IVisualv2 dlg = new Frm_re_IVisualv2(frame, true);
                     regTblAuditoriaSicov(null, 7, 1, idPrueba, revTec, "E", " ", usr);
                 }
             }
-            regIdAuditoria(idPrueba, revTec, true,eventoDTO,cda);
-            
-            
+            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
         } catch (Exception e) {
             System.out.println("  (): " + e.getLocalizedMessage() + e.getMessage());
         }
         doClose(0);
     }
-    
-    
-    
-    
+
     /**
      * @autor ELKIN B
      * @param idHojaPruebaLocal
@@ -1838,82 +1744,79 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaDesviacion(int idHojaPruebaLocal,Usuarios usuarioJPA,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans) 
-    {
+    private void pruebaDesviacion(int idHojaPruebaLocal, Usuarios usuarioJPA, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando Desviacion-----------------");
         System.out.println("-----------------------------------------------------");
-        try 
-        {
-                idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 4, em);//cuatro es desviacion
-                if (idPrueba > 1) {
-                    controladorVerificar.clearContextoPrueba(idPrueba, em);
-                }
-                if (idPrueba < 0) {
-                    JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
-                    doClose(0);
-                    return;
-                } else {//Existe una prueba comprobar que tipo de vehiculo es y abrir la respectiva prueba   
+        try {
+            idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 4, em);//cuatro es desviacion
+            if (idPrueba > 1) {
+                controladorVerificar.clearContextoPrueba(idPrueba, em);
+            }
+            if (idPrueba < 0) {
+                JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
+                doClose(0);
+                return;
+            } else {//Existe una prueba comprobar que tipo de vehiculo es y abrir la respectiva prueba   
 //                    PruebaDefaultDAO.escrTrans = "";
 //                    System.out.println("valor inicial  " + PruebaDefaultDAO.escrTrans);
-                    Vehiculos vehiculo = controladorVerificar.getTipoVehiculo(placas, em);
-                    boolean ensenianza = vehiculo.getEsEnsenaza() > 0;
-                    if (revTec == 1) {
-                        if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
-                            ClienteSicov clienteIndra = new ClienteSicov();
-                            eventoDTO.setNombrePrueba("FAS");
-                            serialEquipo = UtilSicov.BusqSerialRegistrado("DESVIACION", valida_tipo);
-                            if (serialEquipo.equals("0")) {
-                                Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
-                                JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas DESVIACION,debido a: (Serial Equipo NO ENCONTRADO)");
-                                doClose(0);
-                                return;
-                            }
-                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
-                            String fecha = UtilSicov.askDate();
-                            fecha = fecha.substring(0, fecha.length() - 2);
-                            eventoDTO.setSerialEquipo(serialEquipo);
-                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
-                            RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
-                            if (respuesta.getCodigoRespuesta().equals("0")) {
-                                JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas FAS");
-                                doClose(0);
-                                return;
-                            }
+                Vehiculos vehiculo = controladorVerificar.getTipoVehiculo(placas, em);
+                boolean ensenianza = vehiculo.getEsEnsenaza() > 0;
+                if (revTec == 1) {
+                    if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
+                        ClienteSicov clienteIndra = new ClienteSicov();
+                        eventoDTO.setNombrePrueba("FAS");
+                        serialEquipo = UtilSicov.BusqSerialRegistrado("DESVIACION", valida_tipo);
+                        if (serialEquipo.equals("0")) {
+                            Logger.getLogger(Frm_Placas.class.getName()).log(Level.WARNING, null, "NO PUEDE INICIALIZAR EVENTOS DE PLACA".concat(eventoDTO.getPlaca()).concat(" DE TIPO ").concat(eventoDTO.getNombrePrueba()));
+                            JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas DESVIACION,debido a: (Serial Equipo NO ENCONTRADO)");
+                            doClose(0);
+                            return;
+                        }
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
+                        String fecha = UtilSicov.askDate();
+                        fecha = fecha.substring(0, fecha.length() - 2);
+                        eventoDTO.setSerialEquipo(serialEquipo);
+                        Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
+                        RespuestaDTO respuesta = clienteIndra.crearEvento(eventoDTO, cda);
+                        if (respuesta.getCodigoRespuesta().equals("0")) {
+                            JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas FAS");
+                            doClose(0);
+                            return;
                         }
                     }
+                }
 
-                    if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
-                        registarPruebaLog(placas, usuarioJPA, "Desviacion");
-                        new DlgIntegradoLiviano(frame, idPrueba, 0, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
-                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+                if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") || vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
+                    registarPruebaLog(placas, usuarioJPA, "Desviacion");
+                    new DlgIntegradoLiviano(frame, idPrueba, 0, 0, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
 
-                    } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado")) {
-                        registarPruebaLog(placas, usuarioJPA, "Desviacion");
-                        new DlgIntegradoPesado(frame, idPrueba, 0, idUsuario, idHojaPruebaLocal, vehiculo.getNumeroejes(), ensenianza, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
-                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
-                    } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")) {
-                        registarPruebaLog(placas, usuarioJPA, "Desviacion");
-                        new DlgIntegrado4x4(frame, idPrueba, 0, 0, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
-                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
-                    } else {
-                        Mensajes.mensajeAdvertencia("Tipo de vehiculo " + vehiculo.getTipoVehiculo() + " no realiza desviación");
-                    }
+                } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado")) {
+                    registarPruebaLog(placas, usuarioJPA, "Desviacion");
+                    new DlgIntegradoPesado(frame, idPrueba, 0, idUsuario, idHojaPruebaLocal, vehiculo.getNumeroejes(), ensenianza, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+                } else if (vehiculo.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")) {
+                    registarPruebaLog(placas, usuarioJPA, "Desviacion");
+                    new DlgIntegrado4x4(frame, idPrueba, 0, 0, idUsuario, idHojaPruebaLocal, aplicTrans, ipEquipo, vehiculo.getTipoVehiculo().getNombre(), vehiculo.getCarplate(), cam_usuario.getText()).setVisible(true);
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+                } else {
+                    Mensajes.mensajeAdvertencia("Tipo de vehiculo " + vehiculo.getTipoVehiculo() + " no realiza desviación");
+                }
             }
 
         } catch (Exception e) {
             System.err.println("Error en el metodo : " + e.getLocalizedMessage() + e.getMessage());
         }
-        
+
         doClose(0);
 
     }
-    
-    
+
     /**
-     * 
+     *
      * @autor ELKIN B
      * @param idHojaPruebaLocal
      * @param usuarioJPA
@@ -1922,122 +1825,111 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param revTec
      * @param cda
      * @param eventoDTO
-     * @param aplicTrans 
+     * @param aplicTrans
      */
-    private void pruebaGases(int idHojaPruebaLocal,Usuarios usuarioJPA,Vehiculos tipo,Frame frame,int revTec, Cda cda,EventoDTO eventoDTO,int aplicTrans) 
-    {
+    private void pruebaGases(int idHojaPruebaLocal, Usuarios usuarioJPA, Vehiculos tipo, Frame frame, int revTec, Cda cda, EventoDTO eventoDTO, int aplicTrans) {
         System.out.println("-----------------------------------------------------");
         System.out.println("--------------realizando prueba Gases-----------------");
         System.out.println("-----------------------------------------------------");
 
-        try 
-        {
+        try {
             idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 8, em);//cambiar por constante
-            if (idPrueba > 1) 
-            {
+            if (idPrueba > 1) {
                 controladorVerificar.clearContextoPrueba(idPrueba, em);
             }
-            
-            if (idPrueba < 0) 
-            {
+
+            if (idPrueba < 0) {
                 JOptionPane.showMessageDialog(null, "Este vehiculo no tiene autorizada la prueba");
                 doClose(0);
                 return;
             }
 
-            if (tipo.getTiposGasolina().getFueltype() == 2 || tipo.getTiposGasolina().getFueltype() == 5 
-                || tipo.getTiposGasolina().getFueltype() == 6 || tipo.getTiposGasolina().getFueltype() == 9)
-            {
+            if (tipo.getTiposGasolina().getFueltype() == 2 || tipo.getTiposGasolina().getFueltype() == 5
+                    || tipo.getTiposGasolina().getFueltype() == 6 || tipo.getTiposGasolina().getFueltype() == 9) {
                 JOptionPane.showMessageDialog(null, " Este Vehiculo esta Exento de Pruebas de Emisiones Contaminantes ..¡"
-                                             + " \n Razon: Tipo Combustible:  " + tipo.getTiposGasolina().getNombregasolina());
+                        + " \n Razon: Tipo Combustible:  " + tipo.getTiposGasolina().getNombregasolina());
                 doClose(0);
                 return;
             }
-            
+
             registarPruebaLog(placas, usuarioJPA, "Gases");
             String serialBanco = "";
             Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
 
-            if (!v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel"))
-            {
-               
-                boolean flag=combustibleGasolina(idHojaPruebaLocal, serialBanco, revTec, cda, eventoDTO, v, frame);
-                if (!flag)
-                    return;
-            }
-            
-            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) 
-                {
-                    if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) 
-                    {
-                        boolean flag=combustibleDieselMotoMotocarro(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
-                        if (!flag)
-                           return;
-                    } else {
-                        WorkerCiclosMoto.aplicTrans = aplicTrans;
-                        WorkerCiclosMoto.ipEquipo = ipEquipo;
-                        JDialogMotosGases dlgMotos = new JDialogMotosGases(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas);
-                        dlgMotos.setVisible(true);
-                    }
-                    System.out.println(" voy apartar idAuditoria para motos ");
-                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+            if (!v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) {
 
-                } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano") 
-                            || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado") 
-                            || v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4") 
-                            || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro") 
-                            || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) 
-                {
-                    if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) 
-                    {
-                        System.out.println("entro al segundo if de diesel");
-                        boolean flag = combustibleDieselOtros(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
-                        if (!flag)
-                            return;
-                    } else 
-                    {
-                        try {
-                            System.out.println("entro al try para crear el dialogovehiculos");
-                            dlgVehiculo = new DialogoVehiculo();
-                            JDialog d = new JDialog((JDialog) SwingUtilities.getWindowAncestor(frame), true);
-                            d.setTitle("Parametros Tipo Gasolina..!");
-                            dlgVehiculo.fillData(placas);
-                            d.add(dlgVehiculo);
-                            d.setSize(278, 305);
-                            d.getRootPane().setDefaultButton(dlgVehiculo.getButtonContinuar());
-                            d.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
-                            d.setLocationRelativeTo(frame);
-                            d.setVisible(true);
-                            WorkerCruceroRalenti.ipEquipo = ipEquipo;
-                            WorkerCruceroRalenti.aplicTrans = aplicTrans;
-                            JDialogPruebaGasolina dlgPruebaGasolina = new JDialogPruebaGasolina(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas);
-                            dlgPruebaGasolina.setVisible(true);
-                            regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
-                        } catch (SQLException | ClassNotFoundException | IOException ex) {
-                            Mensajes.mostrarExcepcion(ex);
-                        }
+                boolean flag = combustibleGasolina(idHojaPruebaLocal, serialBanco, revTec, cda, eventoDTO, v, frame);
+                if (!flag) {
+                    return;
+                }
+            }
+
+            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {
+                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) {
+                    boolean flag = combustibleDieselMotoMotocarro(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
+                    if (!flag) {
+                        return;
+                    }
+                } else {
+                    WorkerCiclosMoto.aplicTrans = aplicTrans;
+                    WorkerCiclosMoto.ipEquipo = ipEquipo;
+                    JDialogMotosGases dlgMotos = new JDialogMotosGases(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas);
+                    dlgMotos.setVisible(true);
+                }
+                System.out.println(" voy apartar idAuditoria para motos ");
+                regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+
+            } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Liviano")
+                    || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Pesado")
+                    || v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")
+                    || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro")
+                    || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
+                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) {
+                    System.out.println("entro al segundo if de diesel");
+                    boolean flag = combustibleDieselOtros(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
+                    if (!flag) {
+                        return;
+                    }
+                } else {
+                    try {
+                        System.out.println("entro al try para crear el dialogovehiculos");
+                        dlgVehiculo = new DialogoVehiculo();
+                        JDialog d = new JDialog((JDialog) SwingUtilities.getWindowAncestor(frame), true);
+                        d.setTitle("Parametros Tipo Gasolina..!");
+                        dlgVehiculo.fillData(placas);
+                        d.add(dlgVehiculo);
+                        d.setSize(278, 305);
+                        d.getRootPane().setDefaultButton(dlgVehiculo.getButtonContinuar());
+                        d.setDefaultCloseOperation(JDialog.DO_NOTHING_ON_CLOSE);
+                        d.setLocationRelativeTo(frame);
+                        d.setVisible(true);
+                        WorkerCruceroRalenti.ipEquipo = ipEquipo;
+                        WorkerCruceroRalenti.aplicTrans = aplicTrans;
+                        JDialogPruebaGasolina dlgPruebaGasolina = new JDialogPruebaGasolina(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas);
+                        dlgPruebaGasolina.setVisible(true);
+                        regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+                    } catch (SQLException | ClassNotFoundException | IOException ex) {
+                        Mensajes.mostrarExcepcion(ex);
                     }
                 }
+            }
         } catch (Exception e) {
             System.out.println("Error en el metodo pruebaGases(): " + e.getLocalizedMessage() + e.getMessage());
         }
-        
+
         doClose(0);
     }
-    
-    
+
     /**
      * @autor ELKIN B
      * @param v
-     * @param frame 
+     * @param frame
      */
-    private void motoMotoCarros(Vehiculos v,Frame frame)
-    {
+    private void motoMotoCarros(Vehiculos v, Frame frame) {
         System.out.println("----------------------------------------------------");
         System.out.println("----------  vehiculosMotoMotoCarros  ---------------");
         System.out.println("----------------------------------------------------");
-        try 
-        {
+        try {
             dlgMotos = new DialogoMotos();
             JDialog d = new JDialog((JDialog) SwingUtilities.getWindowAncestor(frame), true);
             if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")) {
@@ -2053,34 +1945,28 @@ public class Frm_Placas extends javax.swing.JDialog
             d.setLocationRelativeTo(frame);
             d.setVisible(true);
 
-        } catch (Exception e) 
-        {
+        } catch (Exception e) {
             System.out.println("Error en el metodo : ()" + e.getMessage());
             System.out.println("Error en el metodo : ()" + e.getStackTrace());
         }
 
-
     }
-    
-    
+
     /**
      * @autor ELKIN B
-     * 
+     *
      * @param cda
      * @param eventoDTO
      * @param v
-     * @return 
+     * @return
      */
-    private boolean envioEventoIndraGases(Cda cda, EventoDTO eventoDTO, Vehiculos v)
-    {
+    private boolean envioEventoIndraGases(Cda cda, EventoDTO eventoDTO, Vehiculos v) {
         System.out.println("----------------------------------------------------");
         System.out.println("----------    envioEventoIndraGases          -----");
         System.out.println("----------------------------------------------------");
-        try 
-        {
+        try {
             ClienteSicov clienteIndra = new ClienteSicov();
-            if (v.getTipoVehiculo().getCartype() == 4) 
-            {
+            if (v.getTipoVehiculo().getCartype() == 4) {
                 int nTiempo = dlgMotos.getNumeroTiempos();
                 if (nTiempo == 2) {
                     eventoDTO.setNombrePrueba("Gases");
@@ -2109,8 +1995,7 @@ public class Frm_Placas extends javax.swing.JDialog
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "Serial: ".concat(serialEquipo));
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.INFO, null, "fecha: ".concat(eventoDTO.getFecha()));
 
-            if (respuesta.getCodigoRespuesta().equals("0")) 
-            {
+            if (respuesta.getCodigoRespuesta().equals("0")) {
                 JOptionPane.showMessageDialog(null, "DISCULPE; No Pude iniciar el Evento para la Pruebas Gases");
                 doClose(0);
                 return false;
@@ -2123,12 +2008,11 @@ public class Frm_Placas extends javax.swing.JDialog
 
         return true;
     }
-    
-    
+
     /**
-     * 
+     *
      * @autor ELKIN B
-     * 
+     *
      * @param idHojaPruebaLocal
      * @param serialBanco
      * @param revTec
@@ -2136,53 +2020,46 @@ public class Frm_Placas extends javax.swing.JDialog
      * @param eventoDTO
      * @param v
      * @param frame
-     * @return 
+     * @return
      */
-    private boolean combustibleGasolina(int idHojaPruebaLocal,String serialBanco,int revTec, Cda cda,EventoDTO eventoDTO,Vehiculos v,Frame frame) 
-    {
+    private boolean combustibleGasolina(int idHojaPruebaLocal, String serialBanco, int revTec, Cda cda, EventoDTO eventoDTO, Vehiculos v, Frame frame) {
         System.out.println("--------------------------------------------------");
         System.out.println("----------  Prueba Combustible Gasolina-----------");
         System.out.println("--------------------------------------------------");
-       //JFM COMENTARIO GASES 
-        try 
-        {
+        //JFM COMENTARIO GASES 
+        try {
             // VALIDADOR DE RULES PARA VEHICULOS A GASOLINA                   
-            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) 
-            {
-                motoMotoCarros(v,frame);
+            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto") || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {
+                motoMotoCarros(v, frame);
             }
             System.out.println("valor de rev tec = " + revTec);
-            if (revTec == 1) 
-            {
+            if (revTec == 1) {
                 System.out.println("entro a prueba de gases de indra");
                 //si es indra realiza envio de evento
-                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
-                {
-                    if (!envioEventoIndraGases(cda, eventoDTO, v)) 
+                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
+                    if (!envioEventoIndraGases(cda, eventoDTO, v)) {
                         return false;
+                    }
                 }
             }
-            
+
             serialBanco = UtilFugas.obtenerSerialBanco();
             System.out.println("SERIAL  BANCO SART  1.7.3 " + serialBanco);
             RegVefCalibraciones r = new RegVefCalibraciones();
-            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")) 
-            {
-                if (r.validAnalizador(serialBanco, dlgMotos.getNumeroTiempos()) == false) 
-                {
+            if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Moto")) {
+                if (r.validAnalizador(serialBanco, dlgMotos.getNumeroTiempos()) == false) {
                     JOptionPane.showMessageDialog(null, "Disculpe; Este Banco no esta Autorizado  para hacer la pueba");
                     doClose(0);
                     return false;
                 }
             }
-            
+
             boolean necesitaFugas = r.necesitaFugas(serialBanco);
             boolean necesitaCalibracion = r.necesitaCalibracionDosPuntos(serialBanco);
             System.out.println(" SÇBANCO CALIBRACION   " + necesitaCalibracion);
             System.out.println(" SÇBANCO FUGAS  " + necesitaFugas);
 
-            if (necesitaFugas || necesitaCalibracion) 
-            {
+            if (necesitaFugas || necesitaCalibracion) {
                 JOptionPane.showMessageDialog(null, "Intente de nuevo una vez atienda el requerimiento de Fugas y calibracion del equipo");
                 doClose(0);
                 return false;
@@ -2212,33 +2089,30 @@ public class Frm_Placas extends javax.swing.JDialog
         }
         return true;
     }
-    
+
     /**
      * @autor ELKIN B
-     * 
+     *
      * @param idHojaPruebaLocal
      * @param revTec
      * @param cda
      * @param eventoDTO
      * @param frame
      * @param aplicTrans
-     * @return 
+     * @return
      */
-    private boolean combustibleDieselMotoMotocarro(int idHojaPruebaLocal, int revTec, Cda cda, EventoDTO eventoDTO, Frame frame,int aplicTrans)
-    {
+    private boolean combustibleDieselMotoMotocarro(int idHojaPruebaLocal, int revTec, Cda cda, EventoDTO eventoDTO, Frame frame, int aplicTrans) {
         System.out.println("--------------------------------------------------");
         System.out.println("------Combustible Diesel Moto y Motocarro---------");
         System.out.println("--------------------------------------------------");
-        
+
         serialEquipo = UtilSicov.BusqSerialRegistrado("OPACIMETRO", valida_tipo);
         idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 8, em);//cambiar por constante
-        try 
-        {   System.out.println("entro al try");
-            if (revTec == 1) 
-            {
+        try {
+            System.out.println("entro al try");
+            if (revTec == 1) {
                 System.out.println("entro a if revTec==1");
-                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA"))
-                {
+                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                     System.out.println(" entro a if de indra en Combustible Diesel Moto y Motocarro ");
                     ClienteSicov clienteIndra = new ClienteSicov();
                     eventoDTO.setNombrePrueba("Gases");
@@ -2269,8 +2143,7 @@ public class Frm_Placas extends javax.swing.JDialog
             System.out.println("SERIAL DEL OPACIMETRO  " + serialOpcimetro);
             RegVefCalibraciones regvef = new RegVefCalibraciones();
             boolean necesitaLinealidad = regvef.necesitaLinealidad(serialOpcimetro);
-            if (necesitaLinealidad == true) 
-            {
+            if (necesitaLinealidad == true) {
                 return false;
             }
             WorkerCiclosDiesel.aplicTrans = aplicTrans;
@@ -2294,31 +2167,26 @@ public class Frm_Placas extends javax.swing.JDialog
         return true;
     }
 
-    
     /**
-     * 
+     *
      * @param idHojaPruebaLocal
      * @param revTec
      * @param cda
      * @param eventoDTO
      * @param frame
      * @param aplicTrans
-     * @return 
+     * @return
      */
-    private boolean combustibleDieselOtros(int idHojaPruebaLocal, int revTec, Cda cda, EventoDTO eventoDTO, Frame frame,int aplicTrans) 
-    {
+    private boolean combustibleDieselOtros(int idHojaPruebaLocal, int revTec, Cda cda, EventoDTO eventoDTO, Frame frame, int aplicTrans) {
         System.out.println("--------------------------------------------------");
         System.out.println("----------combustibleDieselOtros-------------------");
         System.out.println("--------------------------------------------------");
-        
+
         idPrueba = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 8, em);//cambiar por constante
         serialEquipo = UtilSicov.BusqSerialRegistrado("OPACIMETRO", valida_tipo);
-        try 
-        {
-            if (revTec == 1) 
-            {
-                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) 
-                {
+        try {
+            if (revTec == 1) {
+                if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                     ClienteSicov clienteIndra = new ClienteSicov();
                     eventoDTO.setNombrePrueba("Gases");
                     if (serialEquipo.equals("0")) {
@@ -2347,8 +2215,8 @@ public class Frm_Placas extends javax.swing.JDialog
             System.out.println("SERIAL DEL OPACIMETRO  " + serialOpcimetro);
             RegVefCalibraciones regvef = new RegVefCalibraciones();
             boolean necesitaLinealidad = regvef.necesitaLinealidad(serialOpcimetro);////////////////////////////////////////////////////////////////////////////
-            System.out.println("valor de linealidad :" + necesitaLinealidad );
-            
+            System.out.println("valor de linealidad :" + necesitaLinealidad);
+
             if (necesitaLinealidad == true) {
                 return false;
             }
@@ -2367,26 +2235,23 @@ public class Frm_Placas extends javax.swing.JDialog
         } catch (SQLException | ClassNotFoundException | IOException ex) {
             Mensajes.mostrarExcepcion(ex);
             System.err.println("u   1    " + ex.getLocalizedMessage() + ex.getMessage());
-        } catch (Exception ex) 
-        {
+        } catch (Exception ex) {
             System.err.println("Error en el metodo : combustibleDieselOtros()" + ex.getLocalizedMessage() + ex.getMessage());
             Logger.getLogger(Frm_Placas.class.getName()).log(Level.SEVERE, null, ex);
-        }    
+        }
         return true;
     }
-    
-    
-    private void btn_verificarMouseClicked(java.awt.event.MouseEvent evt) {                                           
 
-    }                                          
+    private void btn_verificarMouseClicked(java.awt.event.MouseEvent evt) {
+
+    }
 
     public void establecerNombreBoton(String nombreBoton) {
         this.nombreBoton = nombreBoton;
     }
 
     //Método para cerrar la ventana
-    private void doClose(int retStatus) 
-    {
+    private void doClose(int retStatus) {
         returnStatus = retStatus;
         setVisible(false);
         dispose();
@@ -2408,14 +2273,13 @@ public class Frm_Placas extends javax.swing.JDialog
     // End of variables declaration                   
     private int returnStatus = 0;
 
-    
     /**
      * Metodo que ayudará a establecer los diferentes booleanos de todas las
      * pruebas, dependiendo si esta autorizada una prueba o no.
-     * 
+     *
      * @param i
      * @param prueba
-     * @return 
+     * @return
      */
     private boolean comprobar(int i, boolean prueba) {
         if (i > -1) {
@@ -2423,21 +2287,19 @@ public class Frm_Placas extends javax.swing.JDialog
         }
         return prueba;
     }
-    
-    public void cerrar()
-    {
+
+    public void cerrar() {
         Window w = SwingUtilities.getWindowAncestor(this);
         w.dispose();
     }
-    
+
     /**
-     * 
+     *
      * @param placas
      * @param usuarioJPA
-     * @param nombreTipoPrueba 
+     * @param nombreTipoPrueba
      */
-    private static void registarPruebaLog(String placas, Usuarios usuarioJPA, String nombreTipoPrueba) 
-    {
+    private static void registarPruebaLog(String placas, Usuarios usuarioJPA, String nombreTipoPrueba) {
         StringBuilder sb = new StringBuilder();
         sb.append("Usuario ").append(usuarioJPA.getNombreusuario()).append(" realiza");
         sb.append(" prueba de :").append(nombreTipoPrueba);

@@ -10,6 +10,7 @@ package com.soltelec.igrafica.labrado.presion;
 import com.soltelec.model.Vehiculos;
 import com.soltelec.modulopuc.persistencia.conexion.DBUtil;
 import dao.PruebasDAO;
+import java.awt.Color;
 import java.awt.Component;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,8 +18,10 @@ import javax.persistence.EntityManager;
 import javax.swing.JTextField;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.lang.invoke.MethodHandles;
 import java.sql.SQLException;
 import java.util.regex.Pattern;
+import javax.swing.BorderFactory;
 import javax.swing.JCheckBox;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
@@ -44,9 +47,9 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
     private Vehiculos vehiculo;
 
     public LabradoPresionLiviano() {
-        
+
     }
-    
+
     /**
      * Creates new form LabradoPresionLiviano
      *
@@ -72,9 +75,9 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         this.frame = frame;
         this.idUsuario = idUsuario;
         this.em = em;
-        if(vehiculo.getPesoBruto() != null){
+        if (vehiculo.getPesoBruto() != null) {
             lblPesoBruto.setText(vehiculo.getPesoBruto().toString());
-        }else{
+        } else {
             lblPesoBruto.setText("");
         }
         pruebasDAO = new PruebasDAO();
@@ -613,6 +616,11 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
         txtEje3IzquierdaIntP.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtEje3IzquierdaIntP.setEnabled(false);
+        txtEje3IzquierdaIntP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEje3IzquierdaIntPActionPerformed(evt);
+            }
+        });
         panelEje3p.add(txtEje3IzquierdaIntP);
 
         jLabel39.setBackground(new java.awt.Color(204, 204, 204));
@@ -831,44 +839,55 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
 
-        System.out.println("---------------------------------------------------"); 
-        System.out.println("--------INSERTANDO MEDIDAS DE LABRADO---------------"); 
-        System.out.println("---------------------------------------------------"); 
-        
-        boolean valido = validarCampos();
+        System.out.println("---------------------------------------------------");
+        System.out.println("--------INSERTANDO MEDIDAS DE LABRADO---------------");
+        System.out.println("---------------------------------------------------");
 
+        boolean valido = validarCampos(), ValidacionNumeros = ValidarNumeros();
+        //System.out.println("valor de  ValidarNumeros: " + ValidacionNumeros);
         if (!valido) {
-            JOptionPane.showMessageDialog(this, "Debe validar las medidas ingresadas", "SART 1.7.2",
+            JOptionPane.showMessageDialog(this, "Debe validar las medidas ingresadas", "SART 1.7.3",
+                    JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if (!ValidacionNumeros) {
+            JOptionPane.showMessageDialog(this, "Por favor valide que los valores ingresados sean validos, recuerde que no pueden haber valores no numericos y/o caracteres especiales", "SART 1.7.3",
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         String campos = "(" + Medidas.ID_TIPO_MEDIDA + "," + Medidas.VALOR_MEDIDA + "," + Medidas.ID_PRUEBA + ")";
-        
-        for (Map.Entry<String, Component> entry : componentMap.entrySet()) 
-        {
+
+        for (Map.Entry<String, Component> entry : componentMap.entrySet()) {
             String valorMedida = ((JTextField) entry.getValue()).getText();
             Object tipoMedida = entry.getKey();
-            Object val = entry.getValue();
-            String valores = "('" + tipoMedida + "','" + valorMedida + "','" + idPrueba + "')";
-            
+           // Object val = entry.getValue();
+            double valor = Double.valueOf(valorMedida);
+            String valores = "('" + tipoMedida + "','" + valor + "','" + idPrueba + "')";
+
             System.out.println("----");
-            System.out.println("-- tipoMedida: " + tipoMedida + " Valor : "+ valorMedida );
+            System.out.println("-- tipoMedida: " + tipoMedida + " Valor : " + valor);
             System.out.println("----");
-            
+
             try {
                 DBUtil.insert(Medidas.TABLA, campos, valores);
+                //JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente...", "SART 1.7.3",JOptionPane.INFORMATION_MESSAGE);                                                
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Error al guardar las medidas tomadas", "SART 1.7.2",
-                        JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Error al guardar las medidas tomadas", "SART 1.7.3", JOptionPane.ERROR_MESSAGE);
+
             }
         }
+                JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente", "SART 1.7.3", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
     private void chkEje2DerechaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkEje2DerechaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_chkEje2DerechaActionPerformed
+
+    private void txtEje3IzquierdaIntPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEje3IzquierdaIntPActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEje3IzquierdaIntPActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -986,8 +1005,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
     private javax.swing.JTextField txtRepuesto3P;
     // End of variables declaration//GEN-END:variables
 
-    private void initEventosCheck() 
-    {
+    private void initEventosCheck() {
 
         //Labrado
         chkEje2Izquierda.addItemListener(new ChangeCheckLabrado(txtEje2IzquierdaInt));
@@ -1040,8 +1058,6 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         componentMap.put("9023", txtEje2IzquierdaP);
         //componentIntMap.put("9027", txtEje2IzquierdaIntP);
 
-        
-
         switch (vehiculo.getNumeroejes()) {
             case 2:
                 panelEje3.setVisible(false);
@@ -1076,8 +1092,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
     private boolean validarCampos() {
         try {
             validacionEje1();
-            switch (vehiculo.getNumeroejes()) 
-            {
+            switch (vehiculo.getNumeroejes()) {
                 case 2:
                     validacionEje2();
                     break;
@@ -1140,12 +1155,12 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
     }
 
     private void validarMedidasLlantasInternas(JCheckBox chkEje2Derecha, JTextField text, String tipoMedida) {
-        if (chkEje2Derecha.isSelected() ) {
-            if((text.getText() == null || text.getText().isEmpty())){
+        if (chkEje2Derecha.isSelected()) {
+            if ((text.getText() == null || text.getText().isEmpty())) {
                 throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }else{
+            } else {
                 componentMap.put(tipoMedida, text);
-            }   
+            }
         }
     }
 
@@ -1155,28 +1170,26 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         }
     }
 
-    private void validacionEje1()
-    {
+    private void validacionEje1() {
         validarMedidasLlantas(txtEje1Derecha);
         validarMedidasLlantas(txtEje1Izquierda);
         validarMedidasLlantas(txtEje1DerechaP);
         validarMedidasLlantas(txtEje1IzquierdaP);
-        
-  //      validarMedidasLlantasInternas(chkRespuesto1, txtRepuesto1P, "9043");
+
+        //      validarMedidasLlantasInternas(chkRespuesto1, txtRepuesto1P, "9043");
 //        validarMedidasLlantasInternas(chkRespuesto2, txtRepuesto2P, "9044");
 //        validarMedidasLlantasInternas(chkRespuesto3, txtRepuesto3P, "9045");
 //        
 //        validarMedidasLlantasInternas(chkRespuesto1P, txtRepuesto1, "9040");
 //        validarMedidasLlantasInternas(chkRespuesto2P, txtRepuesto2, "9041");
 //        validarMedidasLlantasInternas(chkRespuesto3P, txtRepuesto3, "9042");
-        
-      validarMedidasLlantasInternas(chkRespuesto1, txtRepuesto1, "9040"); 
-       validarMedidasLlantasInternas(chkRespuesto2, txtRepuesto2, "9041");
-       validarMedidasLlantasInternas(chkRespuesto3, txtRepuesto3, "9042");
-        
-       validarMedidasLlantasInternas(chkRespuesto1P, txtRepuesto1P, "9043");
-       validarMedidasLlantasInternas(chkRespuesto2P, txtRepuesto2P, "9044");
-       validarMedidasLlantasInternas(chkRespuesto3P, txtRepuesto3P, "9045");
+        validarMedidasLlantasInternas(chkRespuesto1, txtRepuesto1, "9040");
+        validarMedidasLlantasInternas(chkRespuesto2, txtRepuesto2, "9041");
+        validarMedidasLlantasInternas(chkRespuesto3, txtRepuesto3, "9042");
+
+        validarMedidasLlantasInternas(chkRespuesto1P, txtRepuesto1P, "9043");
+        validarMedidasLlantasInternas(chkRespuesto2P, txtRepuesto2P, "9044");
+        validarMedidasLlantasInternas(chkRespuesto3P, txtRepuesto3P, "9045");
 
     }
 
@@ -1188,7 +1201,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
         validarMedidasLlantasInternas(chkEje2Derecha, txtEje2DerechaInt, "9018");
         validarMedidasLlantasInternas(chkEje2DerechaP, txtEje2DerechaIntP, "9036");
-        validarMedidasLlantasInternas(chkEje2Izquierda, txtEje2IzquierdaInt,"9009");
+        validarMedidasLlantasInternas(chkEje2Izquierda, txtEje2IzquierdaInt, "9009");
         validarMedidasLlantasInternas(chkEje2IzquierdaP, txtEje2IzquierdaIntP, "9027");
     }
 
@@ -1198,10 +1211,10 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         validarMedidasLlantas(txtEje3DerechaP);
         validarMedidasLlantas(txtEje3IzquierdaP);
 
-        validarMedidasLlantasInternas(chkEje3Izquierda, txtEje3IzquierdaInt,"9010");
+        validarMedidasLlantasInternas(chkEje3Izquierda, txtEje3IzquierdaInt, "9010");
         validarMedidasLlantasInternas(chkEje3IzquierdaP, txtEje3IzquierdaIntP, "9028");
         validarMedidasLlantasInternas(chkEje3Derecha, txtEje3DerechaInt, "9019");
-        validarMedidasLlantasInternas(chkEje3DerechaP, txtEje3DerechaIntP,"9037");
+        validarMedidasLlantasInternas(chkEje3DerechaP, txtEje3DerechaIntP, "9037");
     }
 
     private void validacionEje4() {
@@ -1210,10 +1223,10 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         validarMedidasLlantas(txtEje4DerechaP);
         validarMedidasLlantas(txtEje4IzquierdaP);
 
-        validarMedidasLlantasInternas(chkEje4Izquierda, txtEje4IzquierdaInt,"9011");
-        validarMedidasLlantasInternas(chkEje4IzquierdaP, txtEje4IzquierdaIntP,"9029");
+        validarMedidasLlantasInternas(chkEje4Izquierda, txtEje4IzquierdaInt, "9011");
+        validarMedidasLlantasInternas(chkEje4IzquierdaP, txtEje4IzquierdaIntP, "9029");
         validarMedidasLlantasInternas(chkEje4Derecha, txtEje4DerechaInt, "9020");
-        validarMedidasLlantasInternas(chkEje4DerechaP, txtEje4DerechaIntP,"9038");
+        validarMedidasLlantasInternas(chkEje4DerechaP, txtEje4DerechaIntP, "9038");
     }
 
     private void validacionEje5() {
@@ -1224,7 +1237,614 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
         validarMedidasLlantasInternas(chkEje5Izquierda, txtEje5IzquierdaInt, "9012");
         validarMedidasLlantasInternas(chkEje5IzquierdaP, txtEje5IzquierdaIntP, "9030");
-        validarMedidasLlantasInternas(chkEje5Derecha, txtEje5DerechaInt,"9021");
+        validarMedidasLlantasInternas(chkEje5Derecha, txtEje5DerechaInt, "9021");
         validarMedidasLlantasInternas(chkEje5DerechaP, txtEje5DerechaIntP, "9039");
     }
+
+    private boolean ValidarNumeros() {
+        double valor = 0;        
+        boolean ValidacionCorrecta = true;
+        txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje1DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto1P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto2P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto3P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje1Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje3DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje4DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje5DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto1.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto2.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtRepuesto3.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+        if (!txtEje1Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje1Izquierda.getText().trim());                                
+                txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("1");
+            }
+
+        }
+
+        if (!txtEje1Derecha.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje1Derecha.getText());
+                txtEje1Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1Derecha.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("2");
+            }
+
+        }
+
+        if (!txtEje2Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2Izquierda.getText());
+                txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("3");
+            }
+
+        }
+
+        if (chkEje2Izquierda.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje2IzquierdaInt.getText());
+                txtEje2IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("4");
+            }
+
+        } else {
+            txtEje2IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+
+        if (!txtEje2Derecha.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2Derecha.getText());
+                txtEje2Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2Derecha.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("5");
+            }
+
+        }
+        if (chkEje2Derecha.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje2DerechaInt.getText());
+                txtEje2DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2DerechaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("6");
+            }
+
+        } else {
+            txtEje2DerechaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }           
+        if (!txtEje3Izquierda.getText().equalsIgnoreCase("") ) {
+            try {
+                valor = Double.valueOf(txtEje3Izquierda.getText());
+                txtEje3Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("valor del txtEje3Izquierda :" + txtEje3Izquierda.getText() );
+                System.out.println("7");
+            }
+
+        }
+        if (chkEje3Izquierda.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje3IzquierdaInt.getText());
+                txtEje3IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("8");
+            }
+
+        } else {
+            txtEje3IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje3Derecha.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje3Derecha.getText());
+                txtEje3Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3Derecha.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("9");
+            }
+
+        }
+        if (chkEje3Derecha.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje3DerechaInt.getText());
+                txtEje3DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3DerechaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("10");
+            }
+
+        } else {
+            txtEje3DerechaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+
+        if (!txtEje4Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje4Izquierda.getText());
+                txtEje4Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("11");
+            }
+
+        }
+        if (chkEje4Izquierda.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje4IzquierdaInt.getText());
+                txtEje4IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("12");
+            }
+
+        } else {
+            txtEje4IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje4Derecha.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje4Derecha.getText());
+                txtEje4Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4Derecha.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("13");
+            }
+
+        }
+        if (chkEje4Derecha.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje4DerechaInt.getText());
+                txtEje4DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4DerechaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("14");
+            }
+
+        } else {
+            txtEje4DerechaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje5Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje5Izquierda.getText());
+                txtEje5Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("15");
+            }
+
+        }
+        if (chkEje5Izquierda.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje5IzquierdaInt.getText());
+                txtEje5IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("16");
+            }
+
+        } else {
+            txtEje5IzquierdaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje5Derecha.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje5Derecha.getText());
+                txtEje5Derecha.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5Derecha.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("17");
+            }
+
+        }
+        if (chkEje5Derecha.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje5DerechaInt.getText());
+                txtEje5DerechaInt.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5DerechaInt.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("18");
+            }
+
+        } else {
+            txtEje5DerechaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+
+        if (chkRespuesto1.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto1.getText());
+                txtRepuesto1.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto1.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("19");
+            }
+
+        }
+        if (chkRespuesto2.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto2.getText());
+                txtRepuesto2.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto2.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("20");
+            }
+
+        } else {
+            txtRepuesto2.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (chkRespuesto3.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto3.getText());
+                txtRepuesto3.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto3.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("21");
+            }
+
+        } else {
+            txtRepuesto3.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje1IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje1IzquierdaP.getText());
+                txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("22");
+            }
+
+        }
+        if (!txtEje1DerechaP.getText().equalsIgnoreCase(regExp)) {
+            try {
+                valor = Double.valueOf(txtEje1DerechaP.getText());
+                txtEje1DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1DerechaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("23");
+            }
+
+        }
+        if (!txtEje2IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2IzquierdaP.getText());
+                txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("24");
+            }
+
+        }
+
+        if (chkEje3IzquierdaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje3IzquierdaIntP.getText());
+                txtEje3IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("25");
+            }
+
+        } else {
+            txtEje3IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (chkEje2IzquierdaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje2IzquierdaIntP.getText());
+                txtEje2IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("26");
+            }
+
+        } else {
+            txtEje2IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje2DerechaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2DerechaP.getText());
+                txtEje2DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2DerechaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("27");
+            }
+
+        }
+        if (chkEje2DerechaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje2DerechaIntP.getText());
+                txtEje2DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("28");
+            }
+
+        } else {
+            txtEje2DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje3IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje3IzquierdaP.getText());
+                txtEje3IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("29");
+            }
+
+        }
+        if (!txtEje3DerechaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje3DerechaP.getText());
+                txtEje3DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3DerechaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("30");
+            }
+
+        }
+        if (chkEje3DerechaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje3DerechaIntP.getText());
+                txtEje3DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje3DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("31");
+            }
+
+        } else {
+            txtEje3DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje4IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje4IzquierdaP.getText());
+                txtEje4IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("32");
+            }
+
+        }
+        if (chkEje4IzquierdaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje4IzquierdaIntP.getText());
+                txtEje4IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("33");
+            }
+
+        } else {
+            txtEje4IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje4DerechaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje4DerechaP.getText());
+                txtEje4DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4DerechaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("34");
+            }
+
+        }
+        if (chkEje4DerechaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje4DerechaIntP.getText());
+                txtEje4DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje4DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("35");
+            }
+
+        } else {
+            txtEje4DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje5IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje5IzquierdaP.getText());
+                txtEje5IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("36");
+            }
+
+        }
+        if (chkEje5IzquierdaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje5IzquierdaIntP.getText());
+                txtEje5IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("37");
+            }
+
+        } else {
+            txtEje5IzquierdaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (!txtEje5DerechaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje5DerechaP.getText());
+                txtEje5DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5DerechaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("38");
+            }
+
+        }
+        if (chkEje5DerechaP.isSelected()) {
+            try {
+                valor = Double.valueOf(txtEje5DerechaIntP.getText());
+                txtEje5DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje5DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("39");
+            }
+
+        } else {
+            txtEje5DerechaIntP.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (chkRespuesto1P.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto1P.getText());
+                txtRepuesto1P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto1P.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("40");
+            }
+
+        } else {
+            txtRepuesto1P.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+        if (chkRespuesto2P.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto2P.getText());
+                txtRepuesto2P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto2P.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("41");
+            }
+
+        } else {
+            txtRepuesto2P.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+
+        if (chkRespuesto3P.isSelected()) {
+            try {
+                valor = Double.valueOf(txtRepuesto3P.getText());
+                txtRepuesto3P.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtRepuesto3P.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("42");
+            }
+
+        } else {
+            txtRepuesto3P.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
+        }
+
+        return ValidacionCorrecta;
+
+    }
+
 }

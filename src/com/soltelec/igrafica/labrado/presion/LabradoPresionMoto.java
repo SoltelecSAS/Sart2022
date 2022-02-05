@@ -10,6 +10,7 @@ package com.soltelec.igrafica.labrado.presion;
 import com.soltelec.model.Vehiculos;
 import com.soltelec.modulopuc.persistencia.conexion.DBUtil;
 import dao.PruebasDAO;
+import java.awt.Color;
 import java.awt.Component;
 import java.util.HashMap;
 import java.util.Map;
@@ -19,6 +20,7 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.sql.SQLException;
 import java.util.regex.Pattern;
+import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import modelo.Medidas;
 
@@ -301,11 +303,18 @@ public class LabradoPresionMoto extends javax.swing.JDialog {
 
     private void btnSiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguienteActionPerformed
 
-        boolean valido = validarCampos();
+        boolean valido = validarCampos(),ValidacionNumeros = ValidarNumeros();
+        System.out.println("valor de valido:" + valido);
+        System.out.println("valor de valido:" + ValidacionNumeros);
 
         if (!valido) {
             JOptionPane.showMessageDialog(this, "Debe validar las medidas ingresadas", "SART 1.7.2",
                     JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        if (!ValidacionNumeros) {
+            System.out.println("entro a validacion numeros");
+            JOptionPane.showMessageDialog(this, "Por favor valide que los valores ingresados sean validos, recuerde que no pueden haber valores no numericos y/o caracteres especiales", "SART 1.7.3",JOptionPane.ERROR_MESSAGE);
             return;
         }
 
@@ -321,10 +330,10 @@ public class LabradoPresionMoto extends javax.swing.JDialog {
             try {
                 DBUtil.insert(Medidas.TABLA, campos, valores);
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Error al guardar las medidas tomadas", "SART 1.7.2",
-                        JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Error al guardar las medidas tomadas", "SART 1.7.2",JOptionPane.ERROR_MESSAGE);
             }
         }
+        JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente", "SART 1.7.2",JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -388,5 +397,92 @@ public class LabradoPresionMoto extends javax.swing.JDialog {
             }
         }
         return true;
+    }
+    
+    private boolean ValidarNumeros(){
+        boolean ValidacionCorrecta = true;
+        double valor = 0;  
+        txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+        
+         if (!txtEje1Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje1Izquierda.getText());
+                txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("1");
+            }
+
+        }else
+         {
+             txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+         }
+         
+         
+          if (!txtEje2Izquierda.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2Izquierda.getText());
+                txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("2");
+            }
+
+        }else
+         {
+             txtEje2Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+         }
+          
+          
+          
+          
+           if (!txtEje1IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje1IzquierdaP.getText());
+                txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("3");
+            }
+
+        }else
+         {
+             txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+         }
+           
+           
+           
+           
+            if (!txtEje2IzquierdaP.getText().equalsIgnoreCase("")) {
+            try {
+                valor = Double.valueOf(txtEje2IzquierdaP.getText());
+                txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
+
+            } catch (NumberFormatException et) {
+                txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+                ValidacionCorrecta = false;
+                System.out.println("4");
+            }
+
+        }else
+         {
+             txtEje2IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
+         }
+        
+        
+        
+        
+        
+        return ValidacionCorrecta;
+        
     }
 }
