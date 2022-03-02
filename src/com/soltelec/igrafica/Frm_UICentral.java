@@ -111,6 +111,8 @@ public class Frm_UICentral extends javax.swing.JDialog {
         em = eManager;
         iniciarHiloFecha(); 
         inciarHiloHumedadTemperatura();
+       // lblInfoGasolina.setText(InciarInfoGasolina());
+        
 
         
         //System.out.println("Voy a comenzar el monitoreo del Opacimetro");
@@ -159,6 +161,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
         lab_labrado = new javax.swing.JLabel();
         displayMultiTemp = new eu.hansolo.steelseries.gauges.DisplaySingle();
         displayMultiHumedad = new eu.hansolo.steelseries.gauges.DisplaySingle();
+        lblInfoGasolina = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -471,6 +474,9 @@ public class Frm_UICentral extends javax.swing.JDialog {
             .addGap(0, 58, Short.MAX_VALUE)
         );
 
+        lblInfoGasolina.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblInfoGasolina.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -478,7 +484,11 @@ public class Frm_UICentral extends javax.swing.JDialog {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(labelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(labelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(lblInfoGasolina, javax.swing.GroupLayout.PREFERRED_SIZE, 672, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnConfiguracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5))
@@ -560,7 +570,10 @@ public class Frm_UICentral extends javax.swing.JDialog {
                 .addComponent(labl_descripcion, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(labelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(lblInfoGasolina, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(labelFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 11, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnConfiguracion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
@@ -1158,6 +1171,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
     private javax.swing.JLabel lab_taxi;
     private javax.swing.JLabel labelFecha;
     private javax.swing.JLabel labl_descripcion;
+    private javax.swing.JLabel lblInfoGasolina;
     // End of variables declaration//GEN-END:variables
    
     
@@ -1397,6 +1411,53 @@ public class Frm_UICentral extends javax.swing.JDialog {
         this.nombreUsuario = nombreUsuario;
     }
 
+    public  String InciarInfoGasolina(){
+        
+        Equipo equipo = new Equipo();
+        StringBuilder sb = new StringBuilder();
+        try {
+            
+            serialBanco = UtilFugas.obtenerSerialBanco();
+            equipo = controller.findEquipoBySerial(serialBanco.toString());
+            Calibracion calibracion = new CalibracionController().findCalibracionGasolina(equipo.getIdEquipo());
+            Calibracion c = new CalibracionController().findCalibraciontipotres(equipo.getIdEquipo());
+
+            if (!serialBanco.equals("")) {
+                //infoAnalizador = UtilPropiedades.cargarPropiedad(serialBanco, "propiedades.properties");
+
+                fechaFugas = sdf.format(calibracion.getFecha());
+                fechaAjuste = sdf.format(c.getFecha());
+                consecutivoPruebasGasolina = UtilInfoServicioGases.obtenerConsecutivoGases();
+
+                
+                sb.append("Serial del Banco: ").append(equipo.getSerialresolucion()).append("\n");
+                sb.append("PEF: ").append("0." + equipo.getPef()).append("\n");
+                sb.append("Marca: ").append(equipo.getMarca()).append("\n");
+                sb.append("Fecha de Fugas: ").append(fechaAjuste).append("\n");
+                sb.append("Fecha de Verificacion: ").append(fechaFugas).append("\n");
+                sb.append("Damab: ").append(equipo.getResolucionambiental()).append("\n");
+            } else {
+                serialBanco = " --";
+                pef = "--";
+                marcaBanco = "--";
+                fechaFugas = "--";
+                fechaVerificacion = "--";
+                consecutivoPruebasGasolina = 0;
+                sb.append("sin informacion");
+            }
+
+            //            if (infoAnalizador == null) {
+                //                infoAnalizador = "Falta la propiedad de configuracion";
+                //            }
+        } catch (Exception exc) {
+            sb.append("No hay informacion");
+            
+        }
+
+        
+        
+        return sb.toString();
+    }
     
  
          

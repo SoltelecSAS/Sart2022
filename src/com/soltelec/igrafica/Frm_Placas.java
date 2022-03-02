@@ -686,7 +686,11 @@ public class Frm_Placas extends javax.swing.JDialog {
         System.out.println(" voy a buscar usuario ");
         Usuarios usuarioJPA = controladorVerificar.getUsuarioByNick(nombre_usuario, em);
         usr = usuarioJPA;
-        em.getTransaction().begin();
+        if(em.getTransaction().isActive() ==false)//si no hay una conexion activa se crea una, en caso de que ya haya una conexion creada no crea ninguna 
+           {
+            em.getTransaction().begin();   
+           }
+        //em.getTransaction().begin();
         em.flush();
         em.getTransaction().commit();
         System.out.println(" pase de fusionamiento del contexto de persistencia ");
@@ -1089,7 +1093,7 @@ public class Frm_Placas extends javax.swing.JDialog {
 
         } catch (Exception e) {
             System.out.println("Error en el metodo : pruebaTaximetro()" + e);
-            System.out.println("Error " + e.getMessage());
+            System.out.println("Error " + e.getMessage()) ;
         }
         doClose(0);
     }

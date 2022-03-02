@@ -1,5 +1,5 @@
 [DAQ]
-puerto: COM7
+puerto: COM4
 
 [BANCO]
 desviacion: si
