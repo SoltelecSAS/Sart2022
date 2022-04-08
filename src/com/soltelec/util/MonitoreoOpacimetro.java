@@ -48,6 +48,7 @@ public class MonitoreoOpacimetro implements Runnable{
             Opacimetro opacimetro = null;
             SerialPort puerto = null;
             String marcaOpacimetro = UtilPropiedades.cargarPropiedad("MarcaOpacimetro", "propiedades.properties");//VERIFICA MARCA DEL OPACIMETRO
+            System.out.println("marcaOpacimetro: "+ marcaOpacimetro);
             
             System.out.println("take marca "+marcaOpacimetro);
             if (marcaOpacimetro == null || marcaOpacimetro.equals("Sensors")) {//VALIDA LA MARCA DEL SENSOR PARA TOMAR ASI LA MEDIDA DE LA OPACIDAD
@@ -64,8 +65,13 @@ public class MonitoreoOpacimetro implements Runnable{
                 puerto = PortSerialUtil.connect(nombrePuerto, 19200, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);//PUERTO POR DONDE RECIBE LOS DATOS DEL OPACIMETRO
                 System.out.println("puerto de recepcion de datos :" + puerto);
             } else {
+                try{
                 puerto = PortSerialUtil.connect(nombrePuerto, 9600, SerialPort.DATABITS_8, SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);//PUERTO POR DONDE RECIBE LOS DATOS DEL OPACIMETRO
                 System.out.println("puerto de recepcion de datos :" + puerto);
+                }catch(Exception l){
+                    System.out.println("verificar archivo de propiedades que la variable Estabilizacion este en false o que el puerto com este correcto en el archivo propiedades ");
+                    
+                }
             }
             opacimetro.setPort(puerto);//ENVIA EL PUERTO AL OPACIMETRO
             med = opacimetro.obtenerDatos();//OBTIENE LOS DATOS DE LA OPACIDAD
@@ -81,7 +87,7 @@ public class MonitoreoOpacimetro implements Runnable{
                 Logger.getLogger("igrafica").info("Se realiza validacion del opacidad, valor obtenido: " + String.valueOf(ev) + ", no se requieren acciones." );
             }
             this.vlOpa = ev;
-            puerto.close();//CIERRA EL PUERTI
+            puerto.close();//CIERRA EL PUERTO
         } catch (Exception e) {
             e.printStackTrace();
         }

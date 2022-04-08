@@ -1888,7 +1888,7 @@ public class Frm_Placas extends javax.swing.JDialog {
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro")
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
-                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel")) {
+                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel") || v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("GAS NATURAL-DIESEL") ) {
                     System.out.println("entro al segundo if de diesel");
                     boolean flag = combustibleDieselOtros(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
                     if (!flag) {

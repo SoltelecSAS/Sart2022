@@ -1181,22 +1181,22 @@ public class Frm_UICentral extends javax.swing.JDialog {
             TempOpaci = UtilPropiedades.cargarPropiedad("TemporizadorOpacimetro", "propiedades.properties");//LEE EL VALOR DE LA VARIABLE TemporizadorOpacimetro
             System.out.println("valor de TempOpaci :" + TempOpaci);
         
-            TempOpaci=(TempOpaci==null)?"":TempOpaci;    
+            TempOpaci=(TempOpaci==null || TempOpaci=="")?"":TempOpaci;    
 
         if (TempOpaci.equalsIgnoreCase("") || TempOpaci.equalsIgnoreCase("false") )//LA VARIABLE ESTA VACIA O ESTA CONFIGURADA COMO FALSE
         {
-            TempOpaci = "";
+            //TempOpaci = "";
             System.out.println("temporizador apagado, la variable TemporizadorOpacimetro esta configurada en false, esta vacia o no existe");
-            System.out.println("________________________________________termina monitoreo de opacimetro________________________________________ ");  
-        }
-
-        else{//EN CASO DE QUE LA VARIABLE EXISTA Y ESTE CONFIGURADA COMO TRUE
+            System.out.println("________________________________________termina monitoreo de opacimetro en false________________________________________ ");  
+            
+        }else
+        {//EN CASO DE QUE LA VARIABLE EXISTA Y ESTE CONFIGURADA COMO TRUE
             System.out.println("temporizador encendido, la variable TemporizadorOpacimetro esta configurada en true");
         ScheduledExecutorService executor = Executors.newScheduledThreadPool(1);//NUMERO DE PROCESOS QUE SE ESTAN EJECUTANDO, EN ESTE CASO SOLO ES 1 EL DE VALIDAR OPACIMETRO
         MonitoreoOpacimetro monitoreo = new MonitoreoOpacimetro();//CREA EL MONITOREO
         
         ScheduledFuture<?> result = executor.scheduleAtFixedRate(monitoreo, 1, 60, TimeUnit.MINUTES);//EJECUTA EL MONITOREO DEL OPACIMETRO, AL TERMINAR GUARDA EL RESULTADO EN LA VARIABLE RESULT, ScheduledFuture Espera hasta que el thread termine y devuelve el resultado      
-        System.out.println("________________________________________termina monitoreo de opacimetro________________________________________ ");  
+        System.out.println("________________________________________termina monitoreo de opacimetro en true________________________________________ ");  
         }
             }
             catch(IOException ex) 
