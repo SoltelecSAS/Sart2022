@@ -591,7 +591,7 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
             } else {
                 if (!validarValoresMedidas(permisibleLabrado)) 
                 {
-                    JOptionPane.showMessageDialog(null, "Selecione defectos de labrado , valores inconsistentes", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Seleccione defectos de labrado , valores inconsistentes", "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
             }
@@ -780,28 +780,6 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
                     }
                 }
             }
-            /* try 
-        {
-            List<Double> listMedidas= cargarMedidasLabradoDB(idPrueba);
-           System.out.println("size de las medidas de labrado :" + listMedidas.size());
-           if(listMedidas.size()== 4)
-           {
-               flag= true;
-               return flag;
-           }
-            if (listMedidas.size() > 4) 
-            {System.out.println("size de las medidas de labrado" + listMedidas.size());
-                    for (int i =4 ; i < listMedidas.size() ; i++ ) 
-                    { System.out.println(" entra al for, valor de i :" + listMedidas.get(i)+ "valor de i :" +i);
-                        if (listMedidas.get(i) < permisible) 
-                        {
-                            flag = false;
-                        }
-                    } 
-                }
-           
-        } */
-
         } catch (Exception e) {
             System.out.println("Error en el metodo: validarValoresMedidas()" + e.getMessage() + e.getLocalizedMessage());
             Mensajes.mostrarExcepcion(e);
@@ -835,7 +813,7 @@ public class Frm_Motorv2 extends javax.swing.JDialog {
             {
                 System.out.println("valor de la lngitud de valor : "+ valor.size());
                // sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+") AND m.TEST=?";
-               sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+","+valor.get(9)+","+valor.get(10)+","+valor.get(11)+","+valor.get(12)+","+valor.get(13)+","+valor.get(14)+","+valor.get(15)+","+valor.get(16)+","+valor.get(17)+","+valor.get(18)+","+valor.get(19)+","+valor.get(20)+") AND m.TEST=?";
+               sql = "SELECT m.Valor_medida FROM medidas m WHERE m.MEASURETYPE IN ("+valor.get(0)+","+valor.get(1)+","+valor.get(2)+","+valor.get(3)+","+valor.get(4)+","+valor.get(5)+","+valor.get(6)+","+valor.get(7)+","+valor.get(8)+","+valor.get(9)+","+valor.get(10)+","+valor.get(11)+","+valor.get(12)+","+valor.get(13)+","+valor.get(14)+","+valor.get(15)+","+valor.get(16)+","+valor.get(17)+") AND m.TEST=?";
                System.out.println(" sql que se ejecuta en cargarMedidasLabradoDB : " + sql);
                 if (conexion != null) 
                 {

@@ -8,10 +8,12 @@ frenos: si
 pista_mixta: si
 
 [SOFTWARE]
-pruebas_unidas: si
+pruebas_unidas: no
 tiempo_mensajes: 4000
 registrar_medidas: si
 backup_registro: si
+rodillo_motocarro: left
+
 
 [DESVIACION]
 ancho_placa: 0.9

@@ -268,6 +268,7 @@ public class ControladorVerificar {
         System.out.println("----------------------------------------------------");
 
         int idPrueba = 0;
+        
         List<Object[]> lstEscalar = consultaDB(em, idHojaPruebas, tipoPrueba);
 
         try 
@@ -371,7 +372,7 @@ public class ControladorVerificar {
             System.out.println("----------------------------------------------------");
 
             Query q = em.createQuery("SELECT p.idPruebas,p.abortada, p.usuarios.geuser,p.finalizada FROM Pruebas p WHERE p.autorizada='N' AND p.hojaPruebas.testsheet = ?1 AND p.tipoPrueba.testtype = ?2  ORDER BY p.idPruebas DESC ");
-            
+            System.out.println("id hoja de pruebas que envio: " + idHojaPruebas + " tipo de prueba que envio: " + tipoPrueba);
             q.setParameter(1, idHojaPruebas);
             q.setParameter(2, tipoPrueba);
             List<Object[]> lstEscalar = q.getResultList();

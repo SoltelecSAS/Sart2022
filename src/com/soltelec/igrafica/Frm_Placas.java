@@ -72,6 +72,7 @@ import org.soltelec.pruebasgases.DialogoVehiculo;
 import com.soltelec.util.MensajesOut;
 import org.apache.commons.lang.StringUtils;
 import utiltermohigrometro.UtilPropiedades;
+import vistas.DlgIntegradoMotoCarro;
 
 /**
  * @author Gerencia TIC
@@ -495,6 +496,7 @@ public class Frm_Placas extends javax.swing.JDialog {
      * @param serialEquipo
      * @param usuario
      */
+    //regTblAuditoriaSicov(null, 7, 1, idPrueba, revTec, "E", " ", usr);
     private void regTblAuditoriaSicov(String tramaAuditoria, Integer evento, Integer operacion, Integer indPrueba, int revTec, String escrTrans, String serialEquipo, Usuarios usuario) {
         System.out.println("ENTRO LECTURA SICOV SART 1.7.3 x 9");
         if (revTec == 1) {
@@ -1498,7 +1500,7 @@ public class Frm_Placas extends javax.swing.JDialog {
                 Vehiculos v = controladorVerificar.getTipoVehiculo(placas, em);
                 boolean ensenianza = v.getEsEnsenaza() > 0;
                 //CAMBIO FRENO DE ENSEÑANZA
-                System.out.println(" c5");
+                System.out.println("c5");
                 if (revTec == 1) {
                     if (cda.getProveedorSicov().equalsIgnoreCase("INDRA")) {
                         ClienteSicov clienteIndra = new ClienteSicov();
@@ -1584,7 +1586,14 @@ public class Frm_Placas extends javax.swing.JDialog {
                     System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
                     regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
                 } else if (v.getTipoVehiculo().getNombre().equalsIgnoreCase("Motocarro")) {
-                    Mensajes.mensajeAdvertencia("No se encuentra modulo para motocarro");
+                    System.out.println(" PRUEBA DE FRENOS MOTOCARROS");
+                    DlgIntegradoMotoCarro dlgFrenMotoCarro = new DlgIntegradoMotoCarro(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
+                    dlgFrenMotoCarro.setVisible(true);
+                    doClose(0); 
+                    System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
+                    System.out.println(" c8");
+                    regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
+                   // Mensajes.mensajeAdvertencia("No se encuentra modulo para motocarro");
                 } else {
                     Mensajes.mensajeAdvertencia("Tipo de vehiculo invalido revise los datos");
                 }

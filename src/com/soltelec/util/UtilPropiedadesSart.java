@@ -49,10 +49,7 @@ public class UtilPropiedadesSart
                           "Labrado9018",
                           "Labrado9019",
                           "Labrado9020",
-                          "Labrado9021",
-                          "Labrado9040",
-                          "Labrado9041",
-                          "Labrado9042"};
+                          "Labrado9021"};
         int cont=0;
         List<Integer> ejemploLista = new ArrayList<Integer>();
         Properties propiedades = new Properties();
