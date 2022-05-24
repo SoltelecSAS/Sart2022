@@ -12,7 +12,7 @@ pruebas_unidas: no
 tiempo_mensajes: 4000
 registrar_medidas: si
 backup_registro: si
-rodillo_motocarro: left
+rodillo_motocarro: DERECHO/IZQUIERDO
 
 
 [DESVIACION]
@@ -38,32 +38,62 @@ tipo_pista: Mixta
 umbral_velo: 25
 umbral_peso_fren: 200
 factor_desq: 1.7
+
 livianos:
 pasos: 12
-salidas: 000001 ,100001
+salidas: 000000 ,000001
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 8000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 1000
 salidas: 000000 ,000000
 tiempo: 3000
-salidas: 000001 ,100001
+salidas: 000001 ,000001
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 8000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 1000
 salidas: 000000 ,000000
 tiempo: 6000
+
+
+motocarro:
+pasos: 12
+salidas: 000000 ,000001
+tiempo: 1000
+salidas: 000000 ,000101
+tiempo: 2000
+salidas: 000000 ,000101
+tiempo: 1000
+salidas: 000000 ,000101
+tiempo: 8000
+salidas: 000000 ,000101
+tiempo: 1000
+salidas: 000000 ,000000
+tiempo: 3000
+salidas: 000001 ,000001
+tiempo: 1000
+salidas: 000001 ,000101
+tiempo: 2000
+salidas: 000001 ,000101
+tiempo: 2000
+salidas: 000001 ,000101
+tiempo: 8000
+salidas: 000001 ,000101
+tiempo: 1000
+salidas: 000000 ,000000
+tiempo: 6000
+
 
 4x4:
 pasos: 24
