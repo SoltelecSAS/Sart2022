@@ -33,6 +33,7 @@ import javax.persistence.Query;
 import javax.swing.JOptionPane;
 import org.soltelec.pruebasgases.motocicletas.CallableInicioMotos;
 import org.soltelec.pruebasgases.motocicletas.CallablePruebaMotos;
+import  org.soltelec.util.RegistrarMedidas;
 import org.soltelec.util.RegistrarMedidas;
 
 /**

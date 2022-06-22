@@ -596,12 +596,13 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void btnInfoGasolinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoGasolinaActionPerformed
         //String infoAnalizador = "";
-        Equipo equipo = new Equipo();
+        Equipo equipo1 = new Equipo();
         try {
             serialBanco = UtilFugas.obtenerSerialBanco();
-            equipo = controller.findEquipoBySerial(serialBanco.toString());
-            Calibracion calibracion = new CalibracionController().findCalibracionGasolina(equipo.getIdEquipo());
-            Calibracion c = new CalibracionController().findCalibraciontipotres(equipo.getIdEquipo());
+            System.out.println("SERIAL BANCO QUE RECOJO: " + serialBanco.toString());
+            equipo1 = controller.findEquipoBySerial(serialBanco.toString());
+            Calibracion calibracion = new CalibracionController().findCalibracionGasolina(equipo1.getIdEquipo());
+            Calibracion c = new CalibracionController().findCalibraciontipotres(equipo1.getIdEquipo());
 
             if (serialBanco != null) {
                 //infoAnalizador = UtilPropiedades.cargarPropiedad(serialBanco, "propiedades.properties");
@@ -617,6 +618,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
                 fechaVerificacion = "--";
                 consecutivoPruebasGasolina = 0;
             }
+            
 
             //            if (infoAnalizador == null) {
                 //                infoAnalizador = "Falta la propiedad de configuracion";
@@ -626,12 +628,13 @@ public class Frm_UICentral extends javax.swing.JDialog {
         }
 
         StringBuilder sb = new StringBuilder();
-        sb.append("Serial del Banco: ").append(equipo.getSerialresolucion()).append("\n");
-        sb.append("PEF: ").append("0." + equipo.getPef()).append("\n");
-        sb.append("Marca: ").append(equipo.getMarca()).append("\n");
+        sb.append("Serial del Banco: ").append(equipo1.getSerialresolucion()).append("\n");
+        sb.append("Serial electronico: ").append(equipo1.getSerialbench()).append("\n");
+        sb.append("PEF: ").append("0.").append(equipo1.getPef()).append("\n");
+        sb.append("Marca: ").append(equipo1.getMarca()).append("\n");
         sb.append("Fecha de Fugas: ").append(fechaAjuste).append("\n");
         sb.append("Fecha de Verificacion: ").append(fechaFugas).append("\n");
-        sb.append("Damab: ").append(equipo.getResolucionambiental()).append("\n");
+        sb.append("Damab: ").append(equipo1.getResolucionambiental()).append("\n");
         // sb.append("Consecutivo de Pruebas Gasolina: ").append(consecutivoPruebasGasolina);
 
         JOptionPane.showMessageDialog(null, sb.toString());
@@ -828,7 +831,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
         if (!equipoBloqueado()) 
         {
             Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-            Frm_Placas dlg = new Frm_Placas(f, true, em);
+            Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
             dlg.establecerNombreBoton("Labrado");
             dlg.setTitle("Reg. profundidad Labrado");
             dlg.setVisible(true);
@@ -876,7 +879,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_integracionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_integracionMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Integracion");
         dlg.setTitle("Ingreso a Integracion de Prueba");
         dlg.setVisible(true);
@@ -930,7 +933,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_suspencionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_suspencionMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Suspensión");
         dlg.setTitle("Ingreso a Suspensión");
         dlg.setVisible(true);
@@ -948,7 +951,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_lucesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_lucesMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Luces");
         dlg.setTitle("Ingreso a Luxometro");
         dlg.setVisible(true);
@@ -966,7 +969,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_ruidoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_ruidoMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Ruido");
         dlg.setTitle("Ingreso a Sonometro");
         dlg.setVisible(true);
@@ -984,7 +987,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_desviacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_desviacionMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Desviacion");
         dlg.setTitle("Ingreso a Desviacion");
         dlg.setVisible(true);
@@ -1002,7 +1005,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_inspeccionVisualMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_inspeccionVisualMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Inspeccion Sensorial");
         dlg.setTitle("Ingreso a Inspeccion Sensorial");
         dlg.setVisible(true);
@@ -1020,7 +1023,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_frenosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_frenosMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Frenos");
         dlg.setTitle("Ingreso a Frenometros");
         dlg.setVisible(true);
@@ -1040,7 +1043,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
         if (!equipoBloqueado()) {
             Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-            Frm_Placas dlg = new Frm_Placas(f, true, em);
+            Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
             dlg.establecerNombreBoton("Gases");
             dlg.setTitle("Ingreso a Gases");
             dlg.setVisible(true);
@@ -1067,7 +1070,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_fotosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_fotosMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Foto");
         dlg.setTitle("Ingreso a Foto");
         dlg.setVisible(true);
@@ -1085,7 +1088,7 @@ public class Frm_UICentral extends javax.swing.JDialog {
 
     private void lab_taxiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lab_taxiMouseClicked
         Frame f = (Frame) (SwingUtilities.getWindowAncestor(this));
-        Frm_Placas dlg = new Frm_Placas(f, true, em);
+        Frm_Placas dlg = new Frm_Placas(f, true, em, termoHigrometroArtisan);
         dlg.establecerNombreBoton("Taximetro");
         dlg.setTitle("Ingreso a Taximetro");
         dlg.setVisible(true);

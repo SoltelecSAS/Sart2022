@@ -1,5 +1,5 @@
 [DAQ]
-puerto: COM4
+puerto: COM1
 
 [BANCO]
 desviacion: si
@@ -12,7 +12,7 @@ pruebas_unidas: no
 tiempo_mensajes: 4000
 registrar_medidas: si
 backup_registro: si
-rodillo_motocarro: DERECHO/IZQUIERDO
+rodillo_motocarro: IZQUIERDO
 
 
 [DESVIACION]

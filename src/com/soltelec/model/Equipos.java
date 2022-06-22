@@ -55,6 +55,12 @@ public class Equipos implements Serializable {
     @Column(name = "marca")
     private String marca;
     @Basic(optional = false)
+    
+    
+    @Column(name = "num_serial_bench")
+    private String serialbench;
+    @Basic(optional = false)
+    
     @Column(name = "num_analizador")
     private String numAnalizador;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "idEquipo")
@@ -124,6 +130,15 @@ public class Equipos implements Serializable {
         this.calibracionesList = calibracionesList;
     }
 
+    public String getSerialbench() {
+        return serialbench;
+    }
+
+    public void setSerialbench(String serialbench) {
+        this.serialbench = serialbench;
+    }
+
+    
     @Override
     public int hashCode() {
         int hash = 0;

@@ -71,6 +71,7 @@ import myplayer.CapturarFoto;
 import org.soltelec.pruebasgases.DialogoVehiculo;
 import com.soltelec.util.MensajesOut;
 import org.apache.commons.lang.StringUtils;
+import termohigrometro.TermoHigrometroArtisan;
 import utiltermohigrometro.UtilPropiedades;
 import vistas.DlgIntegradoMotoCarro;
 
@@ -98,6 +99,7 @@ public class Frm_Placas extends javax.swing.JDialog {
     private DialogoVehiculo dlgVehiculo = null;
     private ControladorVerificar controladorVerificar = new ControladorVerificar();
     private boolean labradorealizada = false;
+    private TermoHigrometroArtisan termoHigrometroArtisan;
 
     public Frm_Placas() {
     }
@@ -108,11 +110,12 @@ public class Frm_Placas extends javax.swing.JDialog {
      * @param parent
      * @param modal
      */
-    public Frm_Placas(java.awt.Frame parent, boolean modal, EntityManager eManager) {
+    public Frm_Placas(java.awt.Frame parent, boolean modal, EntityManager eManager, TermoHigrometroArtisan termoHigrometroArtisan) {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
         em = eManager;
+        this.termoHigrometroArtisan = termoHigrometroArtisan;
     }
 
     @SuppressWarnings("unchecked")
@@ -688,10 +691,10 @@ public class Frm_Placas extends javax.swing.JDialog {
         System.out.println(" voy a buscar usuario ");
         Usuarios usuarioJPA = controladorVerificar.getUsuarioByNick(nombre_usuario, em);
         usr = usuarioJPA;
-        if(em.getTransaction().isActive() ==false)//si no hay una conexion activa se crea una, en caso de que ya haya una conexion creada no crea ninguna 
-           {
-            em.getTransaction().begin();   
-           }
+        if (em.getTransaction().isActive() == false)//si no hay una conexion activa se crea una, en caso de que ya haya una conexion creada no crea ninguna 
+        {
+            em.getTransaction().begin();
+        }
         //em.getTransaction().begin();
         em.flush();
         em.getTransaction().commit();
@@ -1095,7 +1098,7 @@ public class Frm_Placas extends javax.swing.JDialog {
 
         } catch (Exception e) {
             System.out.println("Error en el metodo : pruebaTaximetro()" + e);
-            System.out.println("Error " + e.getMessage()) ;
+            System.out.println("Error " + e.getMessage());
         }
         doClose(0);
     }
@@ -1468,9 +1471,8 @@ public class Frm_Placas extends javax.swing.JDialog {
         //CAMBIO FRENO DE ENSEÑANZA
         // boolean ensenianza = false;
         try {
-            System.out.println(" hola c4");
             int idPruebaV = controladorVerificar.extraerIdPrueba(idHojaPruebaLocal, 1, em);
-            System.out.println("pase el c4");
+
             try {
                 if (controladorVerificar.getPruebaNoFinalizadaTipo(idPruebaV, 1, em) < 0) {
                     JOptionPane.showMessageDialog(null, "La inspeccion visual no ha sido terminada");
@@ -1589,11 +1591,11 @@ public class Frm_Placas extends javax.swing.JDialog {
                     System.out.println(" PRUEBA DE FRENOS MOTOCARROS");
                     DlgIntegradoMotoCarro dlgFrenMotoCarro = new DlgIntegradoMotoCarro(frame, 0, 0, idPrueba, idUsuario, idHojaPruebaLocal, ensenianza, aplicTrans, ipEquipo, v.getTipoVehiculo().getNombre(), v.getCarplate(), cam_usuario.getText());
                     dlgFrenMotoCarro.setVisible(true);
-                    doClose(0); 
+                    doClose(0);
                     System.out.println("VOY A REGISTAR TIMER DE TRANSACCION ");
                     System.out.println(" c8");
                     regIdAuditoria(idPrueba, revTec, true, eventoDTO, cda);
-                   // Mensajes.mensajeAdvertencia("No se encuentra modulo para motocarro");
+                    // Mensajes.mensajeAdvertencia("No se encuentra modulo para motocarro");
                 } else {
                     Mensajes.mensajeAdvertencia("Tipo de vehiculo invalido revise los datos");
                 }
@@ -1886,7 +1888,7 @@ public class Frm_Placas extends javax.swing.JDialog {
                 } else {
                     WorkerCiclosMoto.aplicTrans = aplicTrans;
                     WorkerCiclosMoto.ipEquipo = ipEquipo;
-                    JDialogMotosGases dlgMotos = new JDialogMotosGases(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas);
+                    JDialogMotosGases dlgMotos = new JDialogMotosGases(frame, true, idPrueba, idUsuario, idHojaPruebaLocal, this, placas, termoHigrometroArtisan);
                     dlgMotos.setVisible(true);
                 }
                 System.out.println(" voy apartar idAuditoria para motos ");
@@ -1897,7 +1899,7 @@ public class Frm_Placas extends javax.swing.JDialog {
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("4x4")
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis_AplTaximetro")
                     || v.getTipoVehiculo().getNombre().equalsIgnoreCase("Taxis")) {
-                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel") || v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("GAS NATURAL-DIESEL") ) {
+                if (v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("Diesel") || v.getTiposGasolina().getNombregasolina().equalsIgnoreCase("GAS NATURAL-DIESEL")) {
                     System.out.println("entro al segundo if de diesel");
                     boolean flag = combustibleDieselOtros(idHojaPruebaLocal, revTec, cda, eventoDTO, frame, aplicTrans);
                     if (!flag) {

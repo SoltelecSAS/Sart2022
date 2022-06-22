@@ -328,8 +328,8 @@ public class FrmLogin extends javax.swing.JFrame {
     
     private boolean contrasenaExpirada(Date fechaValidacion, Date fechaHoy) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        System.out.println("Fecha de validacion: " + sdf.format(fechaValidacion));
-        System.out.println("Fecha de Hoy: " + sdf.format(fechaHoy));
+        //System.out.println("Fecha de validacion: " + sdf.format(fechaValidacion));
+        //System.out.println("Fecha de Hoy: " + sdf.format(fechaHoy));
         Calendar calendarValidacion = Calendar.getInstance();
         calendarValidacion.setTime(fechaValidacion);
         Calendar calendarHoy = Calendar.getInstance();
