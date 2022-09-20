@@ -1,17 +1,19 @@
 [DAQ]
-puerto: COM5
+puerto: COM3
 
 [BANCO]
 desviacion: no
-suspension: si
+suspension: no
 frenos: si
 pista_mixta: si
 
 [SOFTWARE]
-pruebas_unidas: si
+pruebas_unidas: no
 tiempo_mensajes: 4000
 registrar_medidas: si
 backup_registro: si
+rodillo_motocarro: derecho
+
 
 [DESVIACION]
 ancho_placa: 0.9
@@ -36,32 +38,57 @@ tipo_pista: Mixta
 umbral_velo: 25
 umbral_peso_fren: 200
 factor_desq: 1.7
+
 livianos:
 pasos: 12
-salidas: 000001 ,100001
+salidas: 000000 ,000001
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 8000
-salidas: 000001 ,100101
+salidas: 000000 ,000101
 tiempo: 1000
 salidas: 000000 ,000000
 tiempo: 3000
-salidas: 000001 ,100001
+salidas: 000001 ,000001
 tiempo: 1000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 2000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 8000
-salidas: 000001 ,100101
+salidas: 000001 ,000101
 tiempo: 1000
 salidas: 000000 ,000000
 tiempo: 6000
+
+
+motocarro:
+pasos: 10
+salidas: 000000,000010
+tiempo: 3000
+salidas: 000000,000011
+tiempo: 3000
+salidas: 000000,000011
+tiempo: 10000
+salidas: 000000,000010
+tiempo: 3000
+salidas: 000000,000000
+tiempo: 3000
+salidas: 000000,000100
+tiempo: 3000
+salidas: 000000,000101
+tiempo: 3000
+salidas: 000000,000101
+tiempo: 10000
+salidas: 000000,000100
+tiempo: 3000
+salidas: 000000,000000
+tiempo: 3000
 
 4x4:
 pasos: 24
@@ -161,3 +188,7 @@ temporizador_pulso: 10
 pulso_x_milesima: 99
 show_cronometro: 1
 ajuste_taximetro: 1
+
+
+
+

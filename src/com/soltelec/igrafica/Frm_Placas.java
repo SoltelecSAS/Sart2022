@@ -331,7 +331,6 @@ public class Frm_Placas extends javax.swing.JDialog {
                 stQ.setParameter(2, test.getTipoPrueba().getTesttype());
                 stQ.executeUpdate();
                 em.flush();
-
             }
             //************************************************************
             test.setFechaaborto(ipEquipo.concat(";").concat(String.valueOf(idAud)));
@@ -507,6 +506,7 @@ public class Frm_Placas extends javax.swing.JDialog {
             try {
                 Thread.sleep(4000);
             } catch (InterruptedException ex) {
+                
             }
             //************************************************************
             em.clear();
@@ -804,6 +804,7 @@ public class Frm_Placas extends javax.swing.JDialog {
         //Que es mas eficiente traer todas las pruebas o buscar segun el boton
         //VehiculosJpaController vjc = new VehiculosJpaController();
         if (nombreBoton.equals("Labrado")) {
+            System.out.println("entro al boton de prueba de labrado ");
             pruebaLabrado(idHojaPruebaLocal, frame);
         }
 
@@ -970,6 +971,7 @@ public class Frm_Placas extends javax.swing.JDialog {
 //                    System.out.println("ESCANEADO SEUDO SERVIDOR SART 1.7  DESVIACION  " + PruebaDefaultDAO.escrTrans);
                     regIdAuditoria(idPruebaDesviacion, revTec, true, eventoDTO, cda);
                 }
+
                 //no iniciar el dialogo si no esta habilitada ni freno, ni desviacion
                 if (idPruebaFreno < 0 && idPruebaDesviacion < 0) {
                     JOptionPane.showMessageDialog(null, "DISCULPE No esta habilitada ninguna de las pruebas");

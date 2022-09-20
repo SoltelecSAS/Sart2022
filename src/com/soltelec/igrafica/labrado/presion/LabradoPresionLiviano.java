@@ -855,13 +855,13 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
                     JOptionPane.ERROR_MESSAGE);
             return;
         }
-
+        System.out.println("valido:" + valido);
         String campos = "(" + Medidas.ID_TIPO_MEDIDA + "," + Medidas.VALOR_MEDIDA + "," + Medidas.ID_PRUEBA + ")";
 
         for (Map.Entry<String, Component> entry : componentMap.entrySet()) {
             String valorMedida = ((JTextField) entry.getValue()).getText();
             Object tipoMedida = entry.getKey();
-           // Object val = entry.getValue();
+            // Object val = entry.getValue();
             double valor = Double.valueOf(valorMedida);
             String valores = "('" + tipoMedida + "','" + valor + "','" + idPrueba + "')";
 
@@ -874,10 +874,9 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
                 //JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente...", "SART 1.7.3",JOptionPane.INFORMATION_MESSAGE);                                                
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Error al guardar las medidas tomadas", "SART 1.7.3", JOptionPane.ERROR_MESSAGE);
-
             }
         }
-                JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente", "SART 1.7.3", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, "Medidas guardadas correctamente", "SART 1.7.3", JOptionPane.INFORMATION_MESSAGE);
         dispose();
     }//GEN-LAST:event_btnSiguienteActionPerformed
 
@@ -1050,6 +1049,10 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
         componentMap.put("9014", txtEje2Derecha);
         //componentIntMap.put("9018", txtEje2DerechaInt);
 
+        //linea añadida , este valor no se estan mostrando en indra
+        componentMap.put("9040", txtRepuesto1);
+        //linea añadida este valo no se esta mostrando en indra
+        componentMap.put("9043", txtRepuesto1P);
         //Presion
         componentMap.put("9022", txtEje1IzquierdaP);
         componentMap.put("9031", txtEje1DerechaP);
@@ -1242,7 +1245,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
     }
 
     private boolean ValidarNumeros() {
-        double valor = 0;        
+        double valor = 0;
         boolean ValidacionCorrecta = true;
         txtEje1IzquierdaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
         txtEje1DerechaP.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
@@ -1289,7 +1292,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
         if (!txtEje1Izquierda.getText().equalsIgnoreCase("")) {
             try {
-                valor = Double.valueOf(txtEje1Izquierda.getText().trim());                                
+                valor = Double.valueOf(txtEje1Izquierda.getText().trim());
                 txtEje1Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
 
             } catch (NumberFormatException et) {
@@ -1366,8 +1369,8 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
         } else {
             txtEje2DerechaInt.setBorder(BorderFactory.createLineBorder(Color.gray, 1));
-        }           
-        if (!txtEje3Izquierda.getText().equalsIgnoreCase("") ) {
+        }
+        if (!txtEje3Izquierda.getText().equalsIgnoreCase("")) {
             try {
                 valor = Double.valueOf(txtEje3Izquierda.getText());
                 txtEje3Izquierda.setBorder(BorderFactory.createLineBorder(Color.BLACK, 1));
@@ -1375,7 +1378,7 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
             } catch (NumberFormatException et) {
                 txtEje3Izquierda.setBorder(BorderFactory.createLineBorder(Color.RED, 1));
                 ValidacionCorrecta = false;
-                System.out.println("valor del txtEje3Izquierda :" + txtEje3Izquierda.getText() );
+                System.out.println("valor del txtEje3Izquierda :" + txtEje3Izquierda.getText());
                 System.out.println("7");
             }
 
@@ -1847,4 +1850,5 @@ public class LabradoPresionLiviano extends javax.swing.JDialog {
 
     }
 
+    
 }
